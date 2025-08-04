@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/contexts/CartContext";
+import { WishlistProvider } from "@/contexts/WishlistContext";
 import Header from "@/components/Header";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
@@ -119,6 +120,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <CartProvider>
+          <WishlistProvider>
           <Toaster />
           <Sonner />
           <BrowserRouter>
@@ -264,6 +266,7 @@ function App() {
               <Route path="/opc-compliance" element={<OpcCompliance />} />
             </Routes>
           </BrowserRouter>
+          </WishlistProvider>
         </CartProvider>
       </TooltipProvider>
     </QueryClientProvider>

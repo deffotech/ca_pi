@@ -31,8 +31,8 @@ const Checkout = () => {
       return;
     }
     
-    // Simulate payment processing
-    toast.success('Payment processed successfully!');
+    // Instead of payment processing, show success message and clear cart
+    toast.success('Order placed successfully! We will contact you for payment details.');
     clearCart();
     navigate('/');
   };
@@ -224,7 +224,7 @@ const Checkout = () => {
                     className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 mt-6"
                     size="lg"
                   >
-                    PAY ₹{finalTotal.toLocaleString()} ONLINE
+                    PROCEED TO PAYMENT - ₹{finalTotal.toLocaleString()}
                   </Button>
                 </div>
 

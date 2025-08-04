@@ -8,11 +8,17 @@ import {
   Settings,
   LogOut,
   Menu,
+  ShoppingCart,
+  Heart,
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { useCart } from "@/contexts/CartContext";
+import { useWishlist } from "@/contexts/WishlistContext";
+import CartDropdown from "@/components/CartDropdown";
+import WishlistDropdown from "@/components/WishlistDropdown";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -236,7 +242,11 @@ const Header = () => {
   const [user, setUser] = useState(null);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isWishlistOpen, setIsWishlistOpen] = useState(false);
   const navigate = useNavigate();
+  const { totalItems: cartItems } = useCart();
+  const { totalItems: wishlistItems } = useWishlist();
 
   useEffect(() => {
     // Check current user session
@@ -1329,6 +1339,41 @@ const Header = () => {
                   No services found for "{searchQuery}"
                 </div>
               )}
+            </div>
+
+            {/* Cart and Wishlist Icons */}
+            <div className="flex items-center space-x-2">
+              {/* Wishlist */}
+              <div className="relative">
+                <button
+                  onClick={() => setIsWishlistOpen(!isWishlistOpen)}
+                  className="relative p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <Heart className="h-5 w-5 text-gray-600" />
+                  {wishlistItems > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                      {wishlistItems}
+                    </span>
+                  )}
+                </button>
+                <WishlistDropdown isOpen={isWishlistOpen} onClose={() => setIsWishlistOpen(false)} />
+              </div>
+
+              {/* Cart */}
+              <div className="relative">
+                <button
+                  onClick={() => setIsCartOpen(!isCartOpen)}
+                  className="relative p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <ShoppingCart className="h-5 w-5 text-gray-600" />
+                  {cartItems > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-green-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                      {cartItems}
+                    </span>
+                  )}
+                </button>
+                <CartDropdown isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+              </div>
             </div>
 
             {/* Mobile menu button */}
