@@ -49,7 +49,7 @@ import CompanyCompliance from "./pages/CompanyCompliance";
 import LlpCompliance from "./pages/LlpCompliance";
 import TANRegistration from "./pages/TANRegistration";
 import TDSReturnFiling from "./pages/TDSReturnFiling";
-import SetupBusinessUAE from "./pages/setupBusinessInUAE";
+// import SetupBusinessUAE from "./pages/SetupBusinessUAE";
 import Consultation from "./pages/Consultation";
 import TalkToExpert from "./pages/TalkToExpert";
 import AboutUs from "./pages/AboutUs";
@@ -151,7 +151,15 @@ function App() {
               <Route path="/icegate-registration" element={<IcegateRegistration />} />
               <Route path="/import-export-code" element={<ImportExportCode />} />
               {/* <Route path="/society-registration" element={<SocietyRegistration />} /> */}
-               <Route path="/setup-business-uae" element={<SetupBusinessUAE />} />
+               <Route path="/setup-business-uae" element={<div className="min-h-screen bg-gray-50 flex items-center justify-center">
+                 <div className="text-center">
+                   <h1 className="text-3xl font-bold text-gray-900 mb-4">Setup Business in UAE</h1>
+                   <p className="text-gray-600 mb-6">This page is under development. Coming soon!</p>
+                   <a href="/consultation" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                     Contact Us for Details
+                   </a>
+                 </div>
+               </div>} />
               <Route path="/setup-business-usa" element={<div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="text-center">
                   <h1 className="text-3xl font-bold text-gray-900 mb-4">Setup Business in USA</h1>
