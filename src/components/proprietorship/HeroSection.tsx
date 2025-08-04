@@ -9,6 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Link } from "react-router-dom";
+import AddToCartButton from "@/components/ui/AddToCartButton";
 
 const HeroSection = () => {
   return (
@@ -101,9 +102,15 @@ const HeroSection = () => {
                     LEDGERS GST Software - 1 Year License
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                  Know More
-                </Button>
+                <AddToCartButton
+                  serviceId="gst-software-registration"
+                  serviceName="GST Software & Registration"
+                  price={2999}
+                  className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹2,999
+                </AddToCartButton>
               </CardContent>
             </Card>
             <Card>
@@ -136,9 +143,15 @@ const HeroSection = () => {
                     LEDGERS GST Software - 1 Year License
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                  ADD
-                </Button>
+                <AddToCartButton
+                  serviceId="gst-filing-registration-6months"
+                  serviceName="GST Filing & Registration - 6 Months"
+                  price={4999}
+                  className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹4,999
+                </AddToCartButton>
               </CardContent>
             </Card>
           </div>
