@@ -6,6 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/contexts/CartContext";
 import { WishlistProvider } from "@/contexts/WishlistContext";
 import Header from "@/components/Header";
+import ChangePassword from "@/pages/ChangePassword";
+import TwoFactorAuth from "@/pages/TwoFactorAuth";
+import BookConsultation from "@/pages/BookConsultation";
+import PrivacySettings from "@/pages/PrivacySettings";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
@@ -133,6 +137,10 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/partner" element={<Partner />} />
               <Route path="/checkout" element={<Checkout />} />
+              <Route path="/change-password" element={<ChangePassword />} />
+              <Route path="/two-factor-auth" element={<TwoFactorAuth />} />
+              <Route path="/book-consultation" element={<BookConsultation />} />
+              <Route path="/privacy-settings" element={<PrivacySettings />} />
               <Route path="/business-registration" element={<BusinessRegistration />} />
               
               {/* Business Registration Routes */}
