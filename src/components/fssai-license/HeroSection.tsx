@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import SendRequestButton from "@/components/ui/SendRequestButton";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Select,
@@ -107,10 +108,19 @@ const HeroSection = () => {
                     LEDGERS Platform
                   </li>
                 </ul>
-                <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton 
+                    serviceId="fssai-state-license-trader"
+                    serviceName="FSSAI State License - Trader, Restaurant - 1 Year"
+                    price={4999}
+                    className="flex-1"
+                  />
+                  <AddToWishlistButton 
+                    serviceId="fssai-state-license-trader"
+                    serviceName="FSSAI State License - Trader, Restaurant - 1 Year"
+                    price={4999}
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card className="border-dashed border-green-500">
@@ -140,10 +150,19 @@ const HeroSection = () => {
                     LEDGERS Platform
                   </li>
                 </ul>
-                <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton 
+                    serviceId="fssai-state-license-manufacturer"
+                    serviceName="FSSAI State License - Manufacturer, Re labeler, Re packer - 1 Year"
+                    price={6999}
+                    className="flex-1"
+                  />
+                  <AddToWishlistButton 
+                    serviceId="fssai-state-license-manufacturer"
+                    serviceName="FSSAI State License - Manufacturer, Re labeler, Re packer - 1 Year"
+                    price={6999}
+                  />
+                </div>
               </CardContent>
             </Card>
           </div>

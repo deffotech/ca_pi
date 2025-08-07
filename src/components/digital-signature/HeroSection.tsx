@@ -7,7 +7,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import SendRequestButton from "@/components/ui/SendRequestButton";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -69,10 +70,19 @@ const HeroSection = () => {
                   <li>&gt; DSC Downloading</li>
                   <li>&gt; Shipping & Handling</li>
                 </ul>
-                <SendRequestButton 
-                  serviceName="Digital Signature - Individual"
-                  className="mt-4 w-full"
-                />
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton 
+                    serviceId="digital-signature-individual"
+                    serviceName="Digital Signature - Individual"
+                    price={1499}
+                    className="flex-1"
+                  />
+                  <AddToWishlistButton 
+                    serviceId="digital-signature-individual"
+                    serviceName="Digital Signature - Individual"
+                    price={1499}
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card className="border-orange-200">
@@ -86,10 +96,19 @@ const HeroSection = () => {
                   <li>&gt; DSC Downloading</li>
                   <li>&gt; Shipping & Handling</li>
                 </ul>
-                <SendRequestButton 
-                  serviceName="Digital Signature - Company"
-                  className="mt-4 w-full"
-                />
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton 
+                    serviceId="digital-signature-company"
+                    serviceName="Digital Signature - Company"
+                    price={2499}
+                    className="flex-1"
+                  />
+                  <AddToWishlistButton 
+                    serviceId="digital-signature-company"
+                    serviceName="Digital Signature - Company"
+                    price={2499}
+                  />
+                </div>
               </CardContent>
             </Card>
           </div>

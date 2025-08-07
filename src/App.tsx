@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Services from "./pages/Services";
 import Partner from "./pages/Partner";
+import Checkout from "./pages/Checkout";
 
 // Import service pages
 import BusinessRegistration from "./pages/BusinessRegistration";
@@ -131,6 +132,7 @@ function App() {
               <Route path="/profile" element={<Profile />} />
               <Route path="/services" element={<Services />} />
               <Route path="/partner" element={<Partner />} />
+              <Route path="/checkout" element={<Checkout />} />
               <Route path="/business-registration" element={<BusinessRegistration />} />
               
               {/* Business Registration Routes */}

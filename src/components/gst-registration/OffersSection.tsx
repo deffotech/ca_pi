@@ -1,6 +1,7 @@
 
 import { Check } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const OffersSection = () => {
   return (
@@ -18,10 +19,19 @@ const OffersSection = () => {
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>DIY GST Filing</span></li>
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>LEDGERS GST Software - 1 Year License</span></li>
           </ul>
-          <SendRequestButton 
-            serviceName="GST Software & Registration"
-            className="w-full mt-6"
-          />
+          <div className="flex gap-2 mt-6">
+            <AddToCartButton 
+              serviceId="gst-software-registration"
+              serviceName="GST Software & Registration"
+              price={2999}
+              className="flex-1"
+            />
+            <AddToWishlistButton 
+              serviceId="gst-software-registration"
+              serviceName="GST Software & Registration"
+              price={2999}
+            />
+          </div>
         </div>
         <div className="border rounded-lg p-6 shadow-sm">
           <div className="flex justify-between items-center mb-4">
@@ -35,10 +45,19 @@ const OffersSection = () => {
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>GST Filing Training & Setup</span></li>
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>LEDGERS GST Software - 1 Year License</span></li>
           </ul>
-          <SendRequestButton 
-            serviceName="GST Filing & Registration - 6 Months"
-            className="w-full mt-6"
-          />
+          <div className="flex gap-2 mt-6">
+            <AddToCartButton 
+              serviceId="gst-filing-registration-6months"
+              serviceName="GST Filing & Registration - 6 Months"
+              price={5999}
+              className="flex-1"
+            />
+            <AddToWishlistButton 
+              serviceId="gst-filing-registration-6months"
+              serviceName="GST Filing & Registration - 6 Months"
+              price={5999}
+            />
+          </div>
         </div>
       </div>
     </section>
