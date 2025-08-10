@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   const [showMoreDocs, setShowMoreDocs] = useState(false);
@@ -44,11 +44,9 @@ const HeroSection = () => {
           <div className="md:col-span-2 space-y-4">
             <h1 className="text-3xl font-bold">Import Export Code</h1>
             <div className="flex items-center space-x-1 text-yellow-500">
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} fill="currentColor" className="w-5 h-5" />
+              ))}
               <a
                 href="#"
                 className="text-blue-600 hover:underline text-sm ml-2"
@@ -87,12 +85,10 @@ const HeroSection = () => {
                       Import Export Certificate
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <SendRequestButton 
+                    serviceName="IE Code Registration"
+                    className="w-full mt-2"
+                  />
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -127,12 +123,10 @@ const HeroSection = () => {
                       Class 3 Encrypted DSC
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <SendRequestButton 
+                    serviceName="IE Code + ICEGATE + DSC"
+                    className="w-full mt-2"
+                  />
                 </CardContent>
               </Card>
             </div>

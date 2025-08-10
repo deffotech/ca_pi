@@ -1,5 +1,4 @@
 
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/producer-company/Breadcrumb';
 import HeroSection from '@/components/producer-company/HeroSection';
@@ -10,7 +9,7 @@ import DocumentsSection from '@/components/producer-company/DocumentsSection';
 const ProducerCompany = () => {
   return (
     <div className="bg-white min-h-screen">
-      <Header />
+    
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />

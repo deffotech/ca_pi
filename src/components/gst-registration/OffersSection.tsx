@@ -1,26 +1,9 @@
 
-import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-import { useCart } from "@/contexts/CartContext";
-import { useToast } from "@/hooks/use-toast";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const OffersSection = () => {
-  const { addToCart } = useCart();
-  const { toast } = useToast();
-
-  const handleAddToCart = (packageName: string, price: number) => {
-    addToCart({
-      id: `gst-${packageName.toLowerCase().replace(/\s+/g, '-')}`,
-      name: packageName,
-      price: price
-    });
-    
-    toast({
-      title: "Added to Cart",
-      description: `${packageName} has been added to your cart.`,
-    });
-  };
-
   return (
     <section>
       <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Our GST Registration Packages</h2>
@@ -36,12 +19,19 @@ const OffersSection = () => {
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>DIY GST Filing</span></li>
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>LEDGERS GST Software - 1 Year License</span></li>
           </ul>
-          <Button 
-            className="w-full mt-6 bg-white text-green-600 border border-green-600 hover:bg-green-50"
-            onClick={() => handleAddToCart("GST Software & Registration", 2499)}
-          >
-            ADD
-          </Button>
+          <div className="flex gap-2 mt-6">
+            <AddToCartButton 
+              serviceId="gst-software-registration"
+              serviceName="GST Software & Registration"
+              price={2999}
+              className="flex-1"
+            />
+            <AddToWishlistButton 
+              serviceId="gst-software-registration"
+              serviceName="GST Software & Registration"
+              price={2999}
+            />
+          </div>
         </div>
         <div className="border rounded-lg p-6 shadow-sm">
           <div className="flex justify-between items-center mb-4">
@@ -55,12 +45,19 @@ const OffersSection = () => {
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>GST Filing Training & Setup</span></li>
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>LEDGERS GST Software - 1 Year License</span></li>
           </ul>
-          <Button 
-            className="w-full mt-6 bg-white text-green-600 border border-green-600 hover:bg-green-50"
-            onClick={() => handleAddToCart("GST Filing & Registration - 6 Months", 4999)}
-          >
-            ADD
-          </Button>
+          <div className="flex gap-2 mt-6">
+            <AddToCartButton 
+              serviceId="gst-filing-registration-6months"
+              serviceName="GST Filing & Registration - 6 Months"
+              price={5999}
+              className="flex-1"
+            />
+            <AddToWishlistButton 
+              serviceId="gst-filing-registration-6months"
+              serviceName="GST Filing & Registration - 6 Months"
+              price={5999}
+            />
+          </div>
         </div>
       </div>
     </section>

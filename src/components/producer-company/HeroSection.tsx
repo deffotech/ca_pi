@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -21,12 +22,14 @@ const HeroSection = () => {
         Contact CA PI today and take the first step towards empowering your
         agricultural venture.
       </p>
-      <Button
-        size="lg"
-        className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg"
-      >
-        Register a Producer Company
-      </Button>
+      <Link to="https://forms.gle/rh7pCaqQSELtPwJz6">
+        <Button
+          size="lg"
+          className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg"
+        >
+          Register a Producer Company
+        </Button>
+      </Link>
     </div>
   );
 };

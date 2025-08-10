@@ -23,7 +23,7 @@ const OffersSection = () => {
   return (
     <Card className="mt-8">
       <CardHeader>
-        <CardTitle>Our FSSAI Registration Packages</CardTitle>
+        <CardTitle>Offers and discounts</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="border rounded-lg p-4">

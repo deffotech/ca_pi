@@ -1,77 +1,36 @@
 
-import { ShoppingBag } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import ExpertRequestForm from '@/components/ExpertRequestForm';
 
 const Sidebar = () => {
   return (
-    <aside className="bg-gray-50 p-6 rounded-lg shadow-sm sticky top-8">
-      <div className="text-center">
-        <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
-        <h3 className="mt-2 text-xl font-semibold text-gray-900">Your cart is empty</h3>
-        <p className="mt-1 text-sm text-gray-500">Browse our services and add some services in cart!</p>
-      </div>
-
-      <div className="mt-6">
-        <p className="text-center text-sm">
-          Existing User? <Link to="/auth" className="font-medium text-green-600 hover:text-green-500">Login</Link>
+    <aside className="w-full max-w-md mx-auto bg-white p-4 md:p-6 rounded-lg shadow-md border border-gray-200 sticky top-8">
+      <div className="mb-8">
+        <h3 className="text-2xl font-bold text-gray-800 mb-2">Request Expert Assistance</h3>
+        <p className="text-gray-500 mb-4 text-sm">
+          Fill out the form below and our experts will contact you within 24 hours. Provide as much detail as possible so we can better understand your needs and provide you with the most relevant assistance.
         </p>
-
-        <form action="#" method="POST" className="mt-4 space-y-4">
-          <div>
-            <label htmlFor="name" className="sr-only">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              autoComplete="name"
-              placeholder="Name"
-              className="block w-full rounded-md border-0 py-2 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm"
-            />
-          </div>
-          <div>
-            <label htmlFor="email" className="sr-only">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              autoComplete="email"
-              placeholder="Email"
-              className="block w-full rounded-md border-0 py-2 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm"
-            />
-          </div>
-          <div>
-            <label htmlFor="phone" className="sr-only">Phone</label>
-            <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <span className="text-gray-500 sm:text-sm">🇮🇳 +91</span>
-              </div>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                autoComplete="tel"
-                placeholder="Phone"
-                className="block w-full rounded-md border-0 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm"
-              />
+        <div className="space-y-3 mb-6">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+              <span className="text-green-600 font-semibold text-sm">1</span>
             </div>
+            <span className="text-sm">Fill out the contact form</span>
           </div>
-          <div className="flex items-center">
-            <input
-              id="gst-credit"
-              name="gst-credit"
-              type="checkbox"
-              className="h-4 w-4 rounded border-gray-300 text-green-600 focus:ring-green-600"
-            />
-            <label htmlFor="gst-credit" className="ml-2 block text-sm text-gray-900">Enter GSTIN to get 18% GST Credit</label>
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+              <span className="text-green-600 font-semibold text-sm">2</span>
+            </div>
+            <span className="text-sm">Our expert reviews your request</span>
           </div>
-          <button
-            type="submit"
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-          >
-            Get Started
-          </button>
-        </form>
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+              <span className="text-green-600 font-semibold text-sm">3</span>
+            </div>
+            <span className="text-sm">We contact you within 24 hours</span>
+          </div>
+        </div>
       </div>
+      <ExpertRequestForm />
     </aside>
   );
 };

@@ -3,13 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
+import { Phone } from "lucide-react";
 
 const Sidebar = () => {
   return (
     <aside className="bg-gray-50 p-6 rounded-lg shadow-sm sticky top-24">
-      <h3 className="text-xl font-bold text-center">Get Started</h3>
+      <Phone className="h-12 w-12 text-gray-400 mx-auto mb-3" />
+      <h3 className="text-xl font-bold text-center">Reach us now</h3>
       <p className="text-center text-sm text-gray-600 mt-2 mb-6">
-        Fill out the form below to begin your GST registration process.
+        Fill out the form below and we'll contact you immediately.
       </p>
       <form className="space-y-4">
         <div>
@@ -36,7 +38,7 @@ const Sidebar = () => {
           </Label>
         </div>
         <Button type="submit" className="w-full bg-green-500 hover:bg-green-600">
-          Get Started
+          Contact Us
         </Button>
       </form>
     </aside>

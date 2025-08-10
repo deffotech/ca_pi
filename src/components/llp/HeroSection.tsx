@@ -1,6 +1,6 @@
 
 import { Star, CheckCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import SendRequestButton from '@/components/ui/SendRequestButton';
 import {
   Select,
   SelectContent,
@@ -70,7 +70,10 @@ const HeroSection = () => {
                 <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" /> Instant Filing</li>
                 <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" /> 4 Name Choice</li>
               </ul>
-              <Button className="w-full mt-4 bg-green-500 hover:bg-green-600">ADD</Button>
+              <SendRequestButton 
+                serviceName="LLP Name Approval"
+                className="w-full mt-4"
+              />
             </div>
             <div className="border-2 border-dashed border-yellow-400 rounded-lg p-4 relative pt-6">
               <span className="absolute top-0 -translate-y-1/2 left-4 bg-white px-2 text-xs font-semibold text-yellow-500">2 Exclusive Offers</span>
@@ -85,7 +88,10 @@ const HeroSection = () => {
                 <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" /> D&C Downloading & Shipping Support</li>
                 <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" /> Bank Account Opening Assistance</li>
               </ul>
-              <Button className="w-full mt-4 bg-green-500 hover:bg-green-600">ADD</Button>
+              <SendRequestButton 
+                serviceName="LLP Registration - Andaman and Nicobar Islands"
+                className="w-full mt-4"
+              />
             </div>
           </div>
           <div className="flex justify-between items-center mt-4 text-sm">

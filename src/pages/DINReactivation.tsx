@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 const DINReactivation = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
       <main className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
         <nav className="flex items-center space-x-1 text-sm text-gray-600 mb-6">
