@@ -18,7 +18,6 @@ const TwelveAand80GRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            
             <DetailsSection />
             <DocumentsSection />
           </div>
