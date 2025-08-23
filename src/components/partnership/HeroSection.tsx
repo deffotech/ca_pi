@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
-
+import SendRequestButton from "@/components/ui/SendRequestButton";
 const HeroSection = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
@@ -103,9 +103,10 @@ const HeroSection = () => {
                     LEDGERS Software - 1 Year
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white border border-green-500 text-green-500 hover:bg-green-50">
-                  ADD
-                </Button>
+                <SendRequestButton 
+                serviceName="Andaman and Nicobar Islands"
+                className="mt-4 w-full"
+              />
               </CardContent>
             </Card>
             <Card className="border-green-200">
@@ -140,9 +141,10 @@ const HeroSection = () => {
                     LEDGERS Software - 1 Year
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white border border-green-500 text-green-500 hover:bg-green-50">
-                  ADD
-                </Button>
+                <SendRequestButton 
+                serviceName="Arunachal Pradesh"
+                className="mt-4 w-full"
+              />
               </CardContent>
             </Card>
           </div>

@@ -1,5 +1,7 @@
 import { Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
+
 import {
   Select,
   SelectContent,
@@ -85,9 +87,10 @@ const HeroSection = () => {
                     4 Name Choice
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white border border-green-500 text-green-500 hover:bg-green-50">
-                  ADD
-                </Button>
+                <SendRequestButton 
+                serviceName="12A Registration"
+                className="mt-4 w-full"
+              />
               </CardContent>
             </Card>
             <Card className="border-green-200">
@@ -126,9 +129,10 @@ const HeroSection = () => {
                     Bank Account Opening Assistance
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white border border-green-500 text-green-500 hover:bg-green-50">
-                  ADD
-                </Button>
+                <SendRequestButton 
+                serviceName="12A Registration"
+                className="mt-4 w-full"
+              />
               </CardContent>
             </Card>
           </div>

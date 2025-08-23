@@ -1,5 +1,5 @@
 import { Star, CheckCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 import {
   Select,
   SelectContent,
@@ -82,12 +82,10 @@ const HeroSection = () => {
                   </li>
                 </ul>
               </div>
-              <Button
-                variant="outline"
-                className="border-green-500 text-green-500 mt-4 w-full"
-              >
-                ADD
-              </Button>
+              <SendRequestButton 
+                serviceName="Company Name Approval"
+                className="mt-4 w-full"
+              />
             </div>
             <div className="border border-yellow-200 bg-yellow-50/50 rounded-lg p-4 flex flex-col justify-between">
               <div>
@@ -126,12 +124,10 @@ const HeroSection = () => {
                   </li>
                 </ul>
               </div>
-              <Button
-                variant="outline"
-                className="border-green-500 text-green-500 mt-4 w-full"
-              >
-                ADD
-              </Button>
+              <SendRequestButton 
+                serviceName="Private Limited Company Registration - Andaman and Nicobar Islands"
+                className="mt-4 w-full"
+              />
             </div>
           </div>
           <div className="flex justify-between items-center mt-4 text-sm">

@@ -1,6 +1,6 @@
 
 import { Star, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
     return (
@@ -21,13 +21,13 @@ const HeroSection = () => {
                         GST Registration for Foreigners
                     </h1>
                     <div className="flex items-center mt-2">
-                        <div className="flex text-yellow-400">
-                            <Star fill="currentColor" className="w-5 h-5" />
-                            <Star fill="currentColor" className="w-5 h-5" />
-                            <Star fill="currentColor" className="w-5 h-5" />
-                            <Star fill="currentColor" className="w-5 h-5" />
-                            <Star fill="currentColor" className="w-5 h-5" />
-                        </div>
+                        {[...Array(5)].map((_, i) => (
+                            <Star
+                                key={i}
+                                fill="currentColor"
+                                className="w-5 h-5 text-yellow-400"
+                            />
+                        ))}
                         <span className="ml-2 text-gray-600">(1)</span>
                     </div>
                     <p className="mt-4 text-gray-600">
@@ -45,7 +45,10 @@ const HeroSection = () => {
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>1 Year GST Filing & Compliance</span></li>
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>GST Payment Facilitation</span></li>
                             </ul>
-                            <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
+                            <SendRequestButton 
+                                serviceName="GST Registration for Foreigners"
+                                className="w-full mt-4"
+                            />
                         </div>
                     </div>
                 </div>

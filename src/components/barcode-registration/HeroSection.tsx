@@ -1,6 +1,5 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import {
   Select,
@@ -9,6 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -21,13 +21,12 @@ const HeroSection = () => {
           <div className="md:col-span-8 p-6 md:p-8">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800">Barcode Registration</h1>
             <div className="flex items-center mt-2">
-              <div className="flex text-yellow-400">
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-              </div>
+              {[...Array(5)].map((_, i) => (
+                <Star
+                  key={i}
+                  className="h-5 w-5 text-yellow-400 fill-yellow-400"
+                />
+              ))}
               <span className="ml-2 text-gray-600">(13)</span>
             </div>
             <p className="mt-4 text-gray-600">
@@ -53,7 +52,10 @@ const HeroSection = () => {
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Allotment Number</li>
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Login credentials</li>
                 </ul>
-                <Button variant="outline" className="mt-4 w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600">ADD</Button>
+                <SendRequestButton 
+                  serviceName="Barcode Registration - Basic"
+                  className="mt-4 w-full"
+                />
               </div>
               <div className="border rounded-lg p-4 relative border-dashed border-green-500">
                 <div className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full absolute top-2 right-2">2 Exclusive Offers</div>
@@ -64,7 +66,10 @@ const HeroSection = () => {
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Allotment Number</li>
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Login credentials</li>
                 </ul>
-                <Button variant="outline" className="mt-4 w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600">ADD</Button>
+                <SendRequestButton 
+                  serviceName="Barcode Registration - Standard"
+                  className="mt-4 w-full"
+                />
               </div>
             </div>
             <div className="flex justify-between mt-6 text-sm">

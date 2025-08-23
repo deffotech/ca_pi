@@ -1,5 +1,7 @@
 import { Star, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
+
 
 const HeroSection = () => {
   return (
@@ -87,9 +89,10 @@ const HeroSection = () => {
               </li>
             </ul>
             <div className="text-right mt-4">
-              <Button className="bg-green-500 hover:bg-green-600 text-white font-bold">
-                ADD
-              </Button>
+            <SendRequestButton 
+                serviceName="12A Registration"
+                className="mt-4 w-full"
+              />
             </div>
           </div>
           <div className="mt-4 flex justify-between text-sm">

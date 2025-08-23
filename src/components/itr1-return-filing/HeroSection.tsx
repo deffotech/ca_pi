@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
   Star,
@@ -8,6 +7,7 @@ import {
   Shield,
   Users,
 } from "lucide-react";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -47,9 +47,10 @@ const HeroSection = () => {
                 <li>• Protected and Confidential</li>
               </ul>
             </div>
-            <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg">
-              File ITR
-            </Button>
+            <SendRequestButton 
+              serviceName="ITR-1 Return Filing"
+              className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg"
+            />
           </div>
         </div>
         <div className="p-8 bg-gradient-to-br from-blue-50 to-white">

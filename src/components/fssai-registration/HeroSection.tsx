@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import AddToCartButton from "@/components/ui/AddToCartButton";
 import {
   Select,
   SelectContent,
@@ -93,12 +94,14 @@ const HeroSection = () => {
                     LEDGERS Platform
                   </li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
+                <AddToCartButton
+                  serviceId="fssai-registration-1year"
+                  serviceName="FSSAI Registration - 1 Year"
+                  price={2999}
+                  className="mt-4 w-full"
                 >
-                  ADD
-                </Button>
+                  ADD TO CART - ₹2,999
+                </AddToCartButton>
               </CardContent>
             </Card>
             <Card className="border-dashed border-green-500">
@@ -127,12 +130,14 @@ const HeroSection = () => {
                     LEDGERS Platform
                   </li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
+                <AddToCartButton
+                  serviceId="fssai-registration-3years"
+                  serviceName="FSSAI Registration - 3 Years"
+                  price={4999}
+                  className="mt-4 w-full"
                 >
-                  ADD
-                </Button>
+                  ADD TO CART - ₹4,999
+                </AddToCartButton>
               </CardContent>
             </Card>
           </div>

@@ -9,6 +9,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Link } from "react-router-dom";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -101,9 +103,22 @@ const HeroSection = () => {
                     LEDGERS GST Software - 1 Year License
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="gst-software-registration"
+                    serviceName="GST Software & Registration"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="gst-software-registration"
+                    serviceName="GST Software & Registration"
+                    price={2999}
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card>
@@ -136,9 +151,22 @@ const HeroSection = () => {
                     LEDGERS GST Software - 1 Year License
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="gst-filing-registration-6months"
+                    serviceName="GST Filing & Registration - 6 Months"
+                    price={4999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹4,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="gst-filing-registration-6months"
+                    serviceName="GST Filing & Registration - 6 Months"
+                    price={4999}
+                  />
+                </div>
               </CardContent>
             </Card>
           </div>

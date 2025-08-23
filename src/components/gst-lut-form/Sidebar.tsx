@@ -3,27 +3,15 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { ShoppingBag } from "lucide-react";
-import { useCart } from '@/contexts/CartContext';
-import { toast } from 'sonner';
 
 const Sidebar = () => {
-  const { addToCart } = useCart();
-
-  const handleAddToCart = () => {
-    addToCart({
-      id: 'gst-lut-form',
-      name: 'GST LUT Form',
-      price: 1999
-    });
-    toast.success('GST LUT Form added to cart!');
-  };
 
   return (
     <aside className="bg-gray-50 p-6 rounded-lg shadow-sm sticky top-24">
       <div className="text-center border-b pb-6">
         <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
-        <h3 className="mt-2 text-lg font-medium text-gray-900">Your cart is empty</h3>
-        <p className="mt-1 text-sm text-gray-500">Browse our services and add some services in cart!</p>
+        <h3 className="mt-2 text-lg font-medium text-gray-900">Reach us now</h3>
+        <p className="mt-1 text-sm text-gray-500">Get personalized assistance for your business needs!</p>
       </div>
 
       <div className="text-center my-6">
@@ -56,11 +44,11 @@ const Sidebar = () => {
           </Label>
         </div>
         <Button 
-          type="button" 
-          onClick={handleAddToCart}
-          className="w-full bg-green-500 hover:bg-green-600"
+          type="submit" 
+          className="w-full" 
+          style={{ backgroundColor: '#C5BAFF', borderColor: '#C5BAFF', color: '#000' }}
         >
-          Add to Cart
+          Contact Us
         </Button>
       </form>
     </aside>
