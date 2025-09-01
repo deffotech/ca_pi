@@ -6,7 +6,6 @@ import HeroSection from '@/components/opc/HeroSection';
 import Sidebar from '@/pages/sideBar';
 import DetailsSection from '@/components/opc/DetailsSection';
 import ComparisonTable from '@/components/proprietorship/ComparisonTable';
-import OffersSection from '@/components/consultation/OffersSection';
 import PricingSection from '@/components/opc/PricingSection';
 
 const OnePersonCompany = () => {
@@ -19,7 +18,6 @@ const OnePersonCompany = () => {
             <div className="lg:col-span-8 space-y-8">
               <HeroSection />
               <PricingSection />
-              <OffersSection />
               <DetailsSection />
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">Proprietorship vs Limited Liability Partnership (LLP) vs Company</h2>

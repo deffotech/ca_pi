@@ -94,15 +94,6 @@ const PricingSection = () => {
           </CardContent>
         </Card>
       </div>
-      
-      <div className="flex justify-between mt-4 text-sm">
-        <Link to="#" className="text-blue-600 hover:underline">
-          Terms and conditions
-        </Link>
-        <Link to="#" className="text-blue-600 hover:underline">
-          Refer a Friend
-        </Link>
-      </div>
     </div>
   );
 };
