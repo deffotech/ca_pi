@@ -7,7 +7,7 @@ import Sidebar from '@/components/opc/Sidebar';
 import DetailsSection from '@/components/opc/DetailsSection';
 import ComparisonTable from '@/components/proprietorship/ComparisonTable';
 import OffersSection from '@/components/consultation/OffersSection';
-import DocumentsSection from '@/components/opc/DocumentsSection';
+import PricingSection from '@/components/opc/PricingSection';
 
 const OnePersonCompany = () => {
   return (
@@ -18,6 +18,7 @@ const OnePersonCompany = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-4">
             <div className="lg:col-span-8 space-y-8">
               <HeroSection />
+              <PricingSection />
               <OffersSection />
               <DetailsSection />
               <div>

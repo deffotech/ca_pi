@@ -7,7 +7,7 @@ import Sidebar from '@/components/llp/Sidebar';
 import DetailsSection from '@/components/llp/DetailsSection';
 import ComparisonTable from '@/components/proprietorship/ComparisonTable';
 import OffersSection from '@/components/consultation/OffersSection';
-import DocumentsSection from '@/components/llp/DocumentsSection';
+import PricingSection from '@/components/llp/PricingSection';
 
 const LLP = () => {
   return (
@@ -18,6 +18,7 @@ const LLP = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-4">
             <div className="lg:col-span-8 space-y-8">
               <HeroSection />
+              <PricingSection />
               <OffersSection />
               <DetailsSection />
               <div>
