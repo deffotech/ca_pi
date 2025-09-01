@@ -8,7 +8,9 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
-import SendRequestButton from "@/components/ui/SendRequestButton";
+
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 const HeroSection = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
@@ -103,10 +105,22 @@ const HeroSection = () => {
                     LEDGERS Software - 1 Year
                   </li>
                 </ul>
-                <SendRequestButton 
-                serviceName="Andaman and Nicobar Islands"
-                className="mt-4 w-full"
-              />
+               <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Andaman and Nicobar Islands"
+                    serviceName="Andaman and Nicobar Islands"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Andaman and Nicobar Islands"
+                    serviceName="Andaman and Nicobar Islands"
+                    price={2999}
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card className="border-green-200">
@@ -140,11 +154,23 @@ const HeroSection = () => {
                     <ChevronRight className="h-4 w-4 mt-0.5 text-green-500 mr-2 flex-shrink-0" />
                     LEDGERS Software - 1 Year
                   </li>
-                </ul>
-                <SendRequestButton 
-                serviceName="Arunachal Pradesh"
-                className="mt-4 w-full"
-              />
+               </ul>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Arunachal Pradesh"
+                    serviceName="Arunachal Pradesh"
+                    price={4999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹4,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Arunachal Pradesh"
+                    serviceName="Arunachal Pradesh"
+                    price={4999}
+                  />
+                </div>
               </CardContent>
             </Card>
           </div>

@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/opc/Breadcrumb';
 import HeroSection from '@/components/opc/HeroSection';
-import Sidebar from '@/components/opc/Sidebar';
+import Sidebar from '@/pages/sideBar';
 import DetailsSection from '@/components/opc/DetailsSection';
 import ComparisonTable from '@/components/proprietorship/ComparisonTable';
 import OffersSection from '@/components/consultation/OffersSection';
@@ -25,7 +25,6 @@ const OnePersonCompany = () => {
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">Proprietorship vs Limited Liability Partnership (LLP) vs Company</h2>
                 <ComparisonTable />
               </div>
-              <DocumentsSection />
             </div>
             <aside className="lg:col-span-4">
               <Sidebar />

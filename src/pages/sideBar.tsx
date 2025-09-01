@@ -1,11 +1,11 @@
 
 import { Button } from '@/components/ui/button';
-import { ShoppingBag, Trash2 } from 'lucide-react';
+import { ShoppingBag, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useCart } from '@/contexts/CartContext';
 
 const Sidebar = () => {
-  const { items, totalPrice, clearCart, removeFromCart } = useCart();
+  const { items, removeFromCart, clearCart, totalItems, totalPrice } = useCart();
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 sticky top-24">
@@ -17,36 +17,37 @@ const Sidebar = () => {
         </div>
       ) : (
         <div>
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">Cart Items</h3>
-          <div className="space-y-3 mb-4">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-lg font-semibold text-gray-800">Your Cart ({totalItems})</h3>
+            <button
+              onClick={clearCart}
+              className="text-sm text-red-600 hover:text-red-700"
+            >
+              Clear All
+            </button>
+          </div>
+          <div className="space-y-3 mb-4 max-h-60 overflow-y-auto">
             {items.map((item) => (
-              <div key={item.id} className="flex justify-between items-start p-3 bg-gray-50 rounded-lg">
+              <div key={item.id} className="flex items-center justify-between p-3 border rounded-lg">
                 <div className="flex-1">
-                  <h4 className="font-medium text-sm text-gray-800">{item.name}</h4>
-                  <p className="text-sm text-green-600 font-semibold">₹{item.price.toLocaleString()} x {item.quantity}</p>
+                  <h4 className="font-medium text-sm">{item.name}</h4>
+                  <p className="text-sm text-gray-500">₹{item.price.toLocaleString()} x {item.quantity}</p>
                 </div>
-                <Button
+                <button
                   onClick={() => removeFromCart(item.id)}
-                  variant="ghost"
-                  size="sm"
-                  className="text-red-500 hover:text-red-700 p-1"
+                  className="text-red-600 hover:text-red-700 ml-2"
                 >
-                  <Trash2 className="h-4 w-4" />
-                </Button>
+                  <X className="w-4 h-4" />
+                </button>
               </div>
             ))}
           </div>
           <div className="border-t pt-4">
             <div className="flex justify-between items-center mb-4">
-              <span className="font-semibold text-gray-800">Total:</span>
-              <span className="font-bold text-lg text-green-600">₹{totalPrice.toLocaleString()}</span>
+              <span className="font-semibold">Total: ₹{totalPrice.toLocaleString()}</span>
             </div>
-            <Button 
-              onClick={clearCart}
-              variant="outline"
-              className="w-full mb-2"
-            >
-              Clear Cart
+            <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold" size="lg">
+              Proceed to Checkout
             </Button>
           </div>
         </div>
