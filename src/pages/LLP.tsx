@@ -25,7 +25,7 @@ const LLP = () => {
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">Proprietorship vs Limited Liability Partnership (LLP) vs Company</h2>
                 <ComparisonTable />
               </div>
-              <DocumentsSection />
+              
             </div>
             <aside className="lg:col-span-4">
               <Sidebar />
