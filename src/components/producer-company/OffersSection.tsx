@@ -58,7 +58,7 @@ const OffersSection = () => {
             className="w-full bg-green-600 hover:bg-green-700 text-white border-0"
             variant="default"
           >
-            ADD
+            ADD TO CART - ₹19,999
           </AddToCartButton>
         </div>
       </div>
