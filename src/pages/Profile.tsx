@@ -7,8 +7,9 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/hooks/use-toast';
-import { User, Mail, Phone, Calendar, Edit, Save, X, Shield, FileText, ShoppingCart, MapPin, Building } from 'lucide-react';
+import { User, Mail, Phone, Calendar, Edit, Save, X, Shield, FileText, ShoppingCart, MapPin, Building, Package } from 'lucide-react';
 
 // Use the actual Supabase database schema
 interface Profile {
@@ -25,9 +26,19 @@ interface Profile {
   updated_at: string;
 }
 
+interface Order {
+  id: string;
+  order_number: string;
+  items: any;
+  total_amount: number;
+  payment_status: string;
+  created_at: string;
+}
+
 const Profile = () => {
   const [user, setUser] = useState<any>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
+  const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
   const [editing, setEditing] = useState(false);
   const [formData, setFormData] = useState({
@@ -53,6 +64,7 @@ const Profile = () => {
       
       setUser(session.user);
       await fetchProfile(session.user.id);
+      await fetchOrders(session.user.id);
       setLoading(false);
     };
 
@@ -131,6 +143,26 @@ const Profile = () => {
       });
     } catch (error) {
       console.error('Error creating profile:', error);
+    }
+  };
+
+  const fetchOrders = async (userId: string) => {
+    try {
+      const { data, error } = await supabase
+        .from('orders')
+        .select('id, order_number, items, total_amount, payment_status, created_at')
+        .eq('user_id', userId)
+        .order('created_at', { ascending: false })
+        .limit(5);
+
+      if (error) {
+        console.error('Error fetching orders:', error);
+        return;
+      }
+
+      setOrders(data || []);
+    } catch (error) {
+      console.error('Error fetching orders:', error);
     }
   };
 
@@ -453,6 +485,47 @@ const Profile = () => {
                   <User className="h-4 w-4 mr-2" />
                   Two-Factor Auth
                 </Button>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Package className="h-5 w-5" />
+                  Recent Orders
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                {orders.length === 0 ? (
+                  <p className="text-sm text-gray-600">No orders found</p>
+                ) : (
+                  orders.map((order) => (
+                    <div key={order.id} className="border rounded-lg p-3 space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm font-medium">{order.order_number}</span>
+                        <Badge variant={order.payment_status === 'paid' ? 'default' : 'secondary'}>
+                          {order.payment_status}
+                        </Badge>
+                      </div>
+                      <div className="text-xs text-gray-600">
+                        {new Date(order.created_at).toLocaleDateString()}
+                      </div>
+                      <div className="text-sm font-semibold">
+                        ₹{(order.total_amount / 100).toFixed(2)}
+                      </div>
+                    </div>
+                  ))
+                )}
+                {orders.length > 0 && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full mt-2"
+                    onClick={() => navigate('/orders')}
+                  >
+                    View All Orders
+                  </Button>
+                )}
               </CardContent>
             </Card>
           </div>
