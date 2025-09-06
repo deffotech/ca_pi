@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 import {
   Select,
   SelectContent,
@@ -98,12 +99,10 @@ const HeroSection = () => {
                       100% Refund Guarantee
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <SendRequestButton 
+                    serviceName="ISO Registration - Non-Audited ISO 9001:2018"
+                    className="mt-4 w-full"
+                  />
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -135,12 +134,10 @@ const HeroSection = () => {
                       100% Refund Guarantee
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <SendRequestButton 
+                    serviceName="ISO Registration - Audited ISO 14001:2018"
+                    className="mt-4 w-full"
+                  />
                 </CardContent>
               </Card>
             </div>

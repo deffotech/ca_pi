@@ -1,77 +1,134 @@
 
-import { Building2, FileText, Users, Award, TrendingUp, Shield, Briefcase, Calculator } from 'lucide-react';
+import { Building2, FileText, Copyright, Scale, Calculator, UserCheck, Globe, CreditCard, Briefcase, Users, FileCheck, Gavel } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
     {
       icon: Building2,
-      title: "Company Registration",
-      description: "Start your business with complete legal compliance",
-      color: "from-blue-500 to-blue-600",
+      title: "Private Limited Company",
+      description: "Incorporate your Private Limited Company with complete documentation",
+      price: "₹6,999",
+      popular: true,
       link: "/private-limited-company"
     },
     {
-      icon: FileText,
-      title: "GST Registration",
-      description: "Seamless GST registration and filing services",
-      color: "from-green-500 to-green-600",
-      link: "/gst-registration"
+      icon: Users,
+      title: "LLP Registration",
+      description: "Register your Limited Liability Partnership with expert guidance",
+      price: "₹4,999",
+      popular: false,
+      link: "/limited-liability-partnership"
     },
     {
-      icon: Shield,
+      icon: UserCheck,
+      title: "One Person Company",
+      description: "Start your OPC with minimal compliance requirements",
+      price: "₹5,999",
+      popular: false,
+      link: "/one-person-company"
+    },
+    {
+      icon: Copyright,
       title: "Trademark Registration",
       description: "Protect your brand with trademark registration",
-      color: "from-purple-500 to-purple-600",
+      price: "₹3,999",
+      popular: false,
       link: "/trademark-registration"
     },
     {
       icon: Calculator,
-      title: "Tax Filing",
-      description: "Professional tax filing and consultation",
-      color: "from-orange-500 to-orange-600",
-      link: "/income-tax-e-filing"
+      title: "GST Registration",
+      description: "Get your GST number with complete assistance",
+      price: "₹2,999",
+      popular: false,
+      link: "/gst-registration"
     },
     {
-      icon: Briefcase,
-      title: "Business Compliance",
-      description: "Stay compliant with all business regulations",
-      color: "from-teal-500 to-teal-600",
-      link: "/company-compliance"
+      icon: FileCheck,
+      title: "Income Tax Return",
+      description: "Professional ITR filing services for individuals and businesses",
+      price: "₹999",
+      popular: false,
+      link: "/income-tax-e-filing-new"
     },
     {
-      icon: Users,
-      title: "Payroll Services",
-      description: "Comprehensive payroll management solutions",
-      color: "from-indigo-500 to-indigo-600",
+      icon: Scale,
+      title: "Legal Documentation",
+      description: "Draft legal agreements and contracts",
+      price: "₹1,999",
+      popular: false,
       link: "/consultation"
+    },
+    {
+      icon: Gavel,
+      title: "Compliance Services",
+      description: "Ongoing compliance support for your business",
+      price: "₹4,999",
+      popular: false,
+      link: "/company-compliance"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Our Professional Services
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Our Business Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive business solutions to help you grow, stay compliant, and succeed in today's competitive market
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Comprehensive business solutions to help you start, grow, and manage your company with complete legal compliance
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <Link key={index} to={service.link} className="group">
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="h-8 w-8 text-white" />
+            <div 
+              key={index} 
+              className={`bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative ${
+                service.popular ? 'ring-2 ring-green-500' : ''
+              }`}
+            >
+              {service.popular && (
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    Most Popular
+                  </span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+              )}
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <service.icon className="h-8 w-8 text-green-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  {service.description}
+                </p>
+                <div className="text-2xl font-bold text-green-600 mb-4">
+                  {service.price}
+                </div>
+                <Link 
+                  to={service.link}
+                  className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors inline-block text-center"
+                >
+                  know more
+                </Link>
               </div>
-            </Link>
+            </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Link 
+            to="/services"
+            className="bg-white text-green-600 border-2 border-green-600 px-8 py-3 rounded-md font-semibold hover:bg-green-600 hover:text-white transition-colors"
+          >
+            View All Services
+          </Link>
         </div>
       </div>
     </section>

@@ -1,85 +1,87 @@
 
-import { Calendar, ArrowRight, Clock, TrendingUp } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Calendar, FileText } from 'lucide-react';
 
 const UpdatesSection = () => {
   const updates = [
     {
-      date: "Dec 25, 2024",
-      title: "New GST Return Filing Deadline Extended",
-      description: "Government extends GSTR-1 filing deadline to provide businesses more time for compliance.",
-      category: "GST Updates",
-      color: "from-blue-500 to-blue-600",
-      link: "/gst-return-filing"
+      title: "From July 1, 2025, GST returns pending over 3 years can no longer be filed. Act Now!",
+      date: "30 Jun 2025",
+      tag: "GST Update",
+      type: "update"
     },
     {
-      date: "Dec 20, 2024", 
-      title: "Simplified Company Registration Process",
-      description: "MCA introduces new digital initiatives to streamline the company incorporation process.",
-      category: "MCA Updates",
-      color: "from-green-500 to-green-600",
-      link: "/private-limited-company"
+      title: "ITR 1 & ITR 4 enabled for AY 2025-26 with prefilled data. File your return now!",
+      date: "05 Jun 2025", 
+      tag: "ITR Filing",
+      type: "update"
     },
     {
-      date: "Dec 18, 2024",
-      title: "Income Tax Return Filing Made Easier",
-      description: "New features added to income tax portal for faster and more accurate ITR filing.",
-      category: "Income Tax",
-      color: "from-purple-500 to-purple-600",
-      link: "/income-tax-e-filing"
+      title: "Attention Taxpayers! Excel Utility for ITR 1 & 4 (AY 2025-26) is now live. File Now!",
+      date: "02 Jun 2025",
+      tag: "ITR Filing", 
+      type: "update"
+    }
+  ];
+
+  const dueDates = [
+    {
+      title: "Provident Fund EPF & ESI Returns and Payment for May 2025",
+      date: "15 Jun 2025"
+    },
+    {
+      title: "Issuance of TDS Certificates Form 16/16A for Jan to March 2025",
+      date: "15 Jun 2025"
+    },
+    {
+      title: "Advance tax Payment for April to June 2025 (1st Installment)",
+      date: "15 Jun 2025"
+    },
+    {
+      title: "GSTR 3B for May 2025(Monthly)",
+      date: "20 Jun 2025"
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Latest Updates & News
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Stay informed with the latest regulatory changes, compliance updates, and business news that matter to your business
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {updates.map((update, index) => (
-            <Link key={index} to={update.link} className="group cursor-pointer">
-              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className={`h-2 bg-gradient-to-r ${update.color}`}></div>
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r ${update.color} text-white`}>
-                      {update.category}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Updates & Alerts */}
+          <div className="bg-white rounded-lg p-6 shadow-sm">
+            <div className="flex items-center mb-4">
+              <FileText className="h-5 w-5 text-blue-600 mr-2" />
+              <h3 className="text-lg font-semibold text-gray-900">Updates & Alerts</h3>
+            </div>
+            <div className="space-y-4">
+              {updates.map((update, index) => (
+                <div key={index} className="border-b border-gray-100 pb-4 last:border-b-0">
+                  <h4 className="text-sm font-medium text-gray-900 mb-2">{update.title}</h4>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-gray-500">Published on: {update.date}</span>
+                    <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">
+                      {update.tag}
                     </span>
-                    <div className="flex items-center text-gray-500 text-sm">
-                      <Calendar className="h-4 w-4 mr-1" />
-                      {update.date}
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                    {update.title}
-                  </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {update.description}
-                  </p>
-                  <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
-                    <span>Read More</span>
-                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+              ))}
+            </div>
+          </div>
 
-        <div className="text-center mt-12">
-          <Link 
-            to="/all-updates"
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            View All Updates
-          </Link>
+          {/* Due Dates */}
+          <div className="bg-white rounded-lg p-6 shadow-sm">
+            <div className="flex items-center mb-4">
+              <Calendar className="h-5 w-5 text-orange-600 mr-2" />
+              <h3 className="text-lg font-semibold text-gray-900">Due Dates</h3>
+            </div>
+            <div className="space-y-4">
+              {dueDates.map((item, index) => (
+                <div key={index} className="border-b border-gray-100 pb-4 last:border-b-0">
+                  <h4 className="text-sm font-medium text-gray-900 mb-2">{item.title}</h4>
+                  <div className="text-xs text-gray-500">Due Date: {item.date}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

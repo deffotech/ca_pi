@@ -5,7 +5,7 @@ import { Users, Target, Award, Globe } from "lucide-react";
 const AboutUs = () => {
   return (
     <div className="min-h-screen">
-      <Header />
+      
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">

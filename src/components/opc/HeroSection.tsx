@@ -1,12 +1,6 @@
 import { Star, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 import { Card, CardContent } from "@/components/ui/card";
 
 const HeroSection = () => {
@@ -52,18 +46,6 @@ const HeroSection = () => {
             Instant Name Application for Company.
           </p>
 
-          <Select defaultValue="mca_approval">
-            <SelectTrigger className="w-full">
-              <SelectValue placeholder="MCA Name Approval" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="mca_approval">MCA Name Approval</SelectItem>
-              <SelectItem value="andaman">
-                Andaman and Nicobar Islands
-              </SelectItem>
-            </SelectContent>
-          </Select>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
             <Card className="border-green-200">
               <CardContent className="p-4">
@@ -85,9 +67,22 @@ const HeroSection = () => {
                     4 Name Choice
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white border border-green-500 text-green-500 hover:bg-green-50">
-                  ADD
-                </Button>
+               <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="MCA Name Approval"
+                    serviceName="MCA Name Approval"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="MCA Name Approval"
+                    serviceName="MCA Name Approval"
+                    price={2999}
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card className="border-green-200">
@@ -126,19 +121,24 @@ const HeroSection = () => {
                     Bank Account Opening Assistance
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white border border-green-500 text-green-500 hover:bg-green-50">
-                  ADD
-                </Button>
+               <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Andaman and Nicobar Islands"
+                    serviceName="Andaman and Nicobar Islands"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Andaman and Nicobar Islands"
+                    serviceName="Andaman and Nicobar Islands"
+                    price={2999}
+                  />
+                </div>
               </CardContent>
             </Card>
-          </div>
-          <div className="flex justify-between items-center mt-4 text-sm">
-            <a href="#" className="text-blue-600 hover:underline">
-              Terms and conditions
-            </a>
-            <a href="#" className="text-blue-600 hover:underline">
-              Refer a Friend
-            </a>
           </div>
         </div>
       </div>

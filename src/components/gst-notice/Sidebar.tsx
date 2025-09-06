@@ -10,8 +10,8 @@ const Sidebar = () => {
     <aside className="bg-gray-50 p-6 rounded-lg shadow-sm sticky top-24">
       <div className="text-center border-b pb-6">
         <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
-        <h3 className="mt-2 text-lg font-medium text-gray-900">Your cart is empty</h3>
-        <p className="mt-1 text-sm text-gray-500">Browse our services and add some services in cart!</p>
+        <h3 className="mt-2 text-lg font-medium text-gray-900">Reach us now</h3>
+        <p className="mt-1 text-sm text-gray-500">Get personalized assistance for your business needs!</p>
       </div>
 
       <div className="text-center my-6">
@@ -43,8 +43,12 @@ const Sidebar = () => {
             Enter GSTIN to get 18% GST Credit
           </Label>
         </div>
-        <Button type="submit" className="w-full bg-green-500 hover:bg-green-600">
-          Get Started
+        <Button 
+          type="submit" 
+          className="w-full" 
+          style={{ backgroundColor: '#C5BAFF', borderColor: '#C5BAFF', color: '#000' }}
+        >
+          Contact Us
         </Button>
       </form>
     </aside>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import { useState } from 'react';
 import { useCart } from '@/contexts/CartContext';
@@ -10,19 +9,6 @@ import { Separator } from '@/components/ui/separator';
 import { ArrowLeft, Mail, Phone } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
-=======
-import { useState } from "react";
-import { useCart } from "@/contexts/CartContext";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { ArrowLeft, Mail, Phone, Loader2 } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
-import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
->>>>>>> 3d57df3 (Images changed)
 
 const Checkout = () => {
   const { items, totalPrice, clearCart } = useCart();
@@ -44,51 +30,11 @@ const Checkout = () => {
       toast.error("Please fill in required fields");
       return;
     }
-<<<<<<< HEAD
     
-    // Simulate payment processing
-    toast.success('Payment processed successfully!');
+    // Instead of payment processing, show success message and clear cart
+    toast.success('Order placed successfully! We will contact you for payment details.');
     clearCart();
     navigate('/');
-=======
-
-    if (items.length === 0) {
-      toast.error("Your cart is empty");
-      return;
-    }
-
-    setIsProcessing(true);
-
-    try {
-      const { data, error } = await supabase.functions.invoke(
-        "create-checkout",
-        {
-          body: {
-            items: items,
-            customerInfo: billingInfo,
-          },
-        }
-      );
-
-      if (error) {
-        console.error("Payment error:", error);
-        toast.error("Payment failed. Please try again.");
-        return;
-      }
-
-      if (data?.url) {
-        // Redirect to Stripe Checkout
-        window.location.href = data.url;
-      } else {
-        throw new Error("No checkout URL received");
-      }
-    } catch (error) {
-      console.error("Payment error:", error);
-      toast.error("Payment failed. Please try again.");
-    } finally {
-      setIsProcessing(false);
-    }
->>>>>>> 3d57df3 (Images changed)
   };
 
   const gstAmount = Math.round(totalPrice * 0.18);
@@ -225,13 +171,8 @@ const Checkout = () => {
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="text-lg font-semibold">Order Summary</h3>
                   <div className="text-right text-sm text-gray-600">
-<<<<<<< HEAD
                     <p>Estimate Date:</p>
                     <p>{new Date().toLocaleDateString('en-GB')}</p>
-=======
-                    <p>Order Date:</p>
-                    <p>{new Date().toLocaleDateString("en-GB")}</p>
->>>>>>> 3d57df3 (Images changed)
                   </div>
                 </div>
 
@@ -250,13 +191,7 @@ const Checkout = () => {
                     >
                       <div>
                         <p className="font-medium">{item.name}</p>
-<<<<<<< HEAD
                         <p className="text-gray-600 text-xs">Professional service registration</p>
-=======
-                        <p className="text-gray-600 text-xs">
-                          Professional service
-                        </p>
->>>>>>> 3d57df3 (Images changed)
                       </div>
                       <div className="text-center">{item.quantity}</div>
                       <div className="text-center">
@@ -289,7 +224,7 @@ const Checkout = () => {
                     className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 mt-6"
                     size="lg"
                   >
-                    PAY ₹{finalTotal.toLocaleString()} ONLINE
+                    PROCEED TO PAYMENT - ₹{finalTotal.toLocaleString()}
                   </Button>
                 </div>
 

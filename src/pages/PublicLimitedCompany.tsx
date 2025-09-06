@@ -12,7 +12,6 @@ import DocumentsSection from '@/components/public-limited-company/DocumentsSecti
 const PublicLimitedCompany = () => {
   return (
     <div className="bg-white min-h-screen">
-      <Header />
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
