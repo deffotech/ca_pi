@@ -19,18 +19,27 @@ const OffersSection = () => {
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>DIY GST Filing</span></li>
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>LEDGERS GST Software - 1 Year License</span></li>
           </ul>
-          <div className="flex gap-2 mt-6">
-            <AddToCartButton 
-              serviceId="gst-software-registration"
-              serviceName="GST Software & Registration"
-              price={2999}
-              className="flex-1"
-            />
-            <AddToWishlistButton 
-              serviceId="gst-software-registration"
-              serviceName="GST Software & Registration"
-              price={2999}
-            />
+          <div className="mt-6">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <span className="text-3xl font-bold text-green-600">₹2,999</span>
+                <span className="text-gray-500 line-through ml-2">₹4,999</span>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <AddToCartButton 
+                serviceId="gst-software-registration"
+                serviceName="GST Software & Registration"
+                price={2999}
+                className="flex-1"
+                children="Add to Cart - ₹2,999"
+              />
+              <AddToWishlistButton 
+                serviceId="gst-software-registration"
+                serviceName="GST Software & Registration"
+                price={2999}
+              />
+            </div>
           </div>
         </div>
         <div className="border rounded-lg p-6 shadow-sm">
@@ -45,18 +54,27 @@ const OffersSection = () => {
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>GST Filing Training & Setup</span></li>
             <li className="flex items-start"><Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>LEDGERS GST Software - 1 Year License</span></li>
           </ul>
-          <div className="flex gap-2 mt-6">
-            <AddToCartButton 
-              serviceId="gst-filing-registration-6months"
-              serviceName="GST Filing & Registration - 6 Months"
-              price={5999}
-              className="flex-1"
-            />
-            <AddToWishlistButton 
-              serviceId="gst-filing-registration-6months"
-              serviceName="GST Filing & Registration - 6 Months"
-              price={5999}
-            />
+          <div className="mt-6">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <span className="text-3xl font-bold text-green-600">₹5,999</span>
+                <span className="text-gray-500 line-through ml-2">₹8,999</span>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <AddToCartButton 
+                serviceId="gst-filing-registration-6months"
+                serviceName="GST Filing & Registration - 6 Months"
+                price={5999}
+                className="flex-1"
+                children="Add to Cart - ₹5,999"
+              />
+              <AddToWishlistButton 
+                serviceId="gst-filing-registration-6months"
+                serviceName="GST Filing & Registration - 6 Months"
+                price={5999}
+              />
+            </div>
           </div>
         </div>
       </div>
