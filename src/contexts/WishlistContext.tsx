@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 interface WishlistItem {
   id: string;
@@ -18,7 +18,17 @@ interface WishlistContextType {
 const WishlistContext = createContext<WishlistContextType | undefined>(undefined);
 
 export const WishlistProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [items, setItems] = useState<WishlistItem[]>([]);
+  const [items, setItems] = useState<WishlistItem[]>(() => {
+    if (typeof window !== 'undefined') {
+      const savedWishlist = localStorage.getItem('wishlist-items');
+      return savedWishlist ? JSON.parse(savedWishlist) : [];
+    }
+    return [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('wishlist-items', JSON.stringify(items));
+  }, [items]);
 
   const addToWishlist = (newItem: WishlistItem) => {
     setItems(prevItems => {
