@@ -1,56 +1,62 @@
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingBag, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useCart } from "@/contexts/CartContext";
 
 const Sidebar = () => {
+  const { items, removeFromCart, clearCart, totalItems, totalPrice } = useCart();
+
   return (
     <aside className="bg-gray-50 p-6 rounded-lg shadow-sm sticky top-24">
-      <div className="text-center border-b pb-6">
-        <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
-        <h3 className="mt-2 text-lg font-medium text-gray-900">Reach us now</h3>
-        <p className="mt-1 text-sm text-gray-500">Get personalized assistance for your business needs!</p>
-      </div>
-
-      <div className="text-center my-6">
-        <span className="text-sm text-gray-600">Existing User? </span>
-        <a href="#" className="font-medium text-green-600 hover:text-green-500">Login</a>
-      </div>
-
-      <form className="space-y-4">
-        <div>
-          <Label htmlFor="name" className="sr-only">Name</Label>
-          <Input id="name" placeholder="Name" />
+      {items.length === 0 ? (
+        <div className="text-center">
+          <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
+          <h3 className="mt-2 text-lg font-semibold text-gray-800">Your cart is empty</h3>
+          <p className="mt-1 text-sm text-gray-500">Browse our services and add some services in cart!</p>
         </div>
+      ) : (
         <div>
-          <Label htmlFor="email" className="sr-only">Email</Label>
-          <Input id="email" type="email" placeholder="Email" />
-        </div>
-        <div>
-          <Label htmlFor="phone" className="sr-only">Phone Number</Label>
-          <div className="flex">
-            <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md">
-              🇮🇳 +91
-            </span>
-            <Input id="phone" type="tel" placeholder="Phone" className="rounded-l-none" />
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-lg font-semibold text-gray-800">Your Cart ({totalItems})</h3>
+            <button
+              onClick={clearCart}
+              className="text-sm text-red-600 hover:text-red-700"
+            >
+              Clear All
+            </button>
+          </div>
+          <div className="space-y-3 mb-4 max-h-60 overflow-y-auto">
+            {items.map((item) => (
+              <div key={item.id} className="flex items-center justify-between p-3 border rounded-lg">
+                <div className="flex-1">
+                  <h4 className="font-medium text-sm">{item.name}</h4>
+                  <p className="text-sm text-gray-500">₹{item.price.toLocaleString()} x {item.quantity}</p>
+                </div>
+                <button
+                  onClick={() => removeFromCart(item.id)}
+                  className="text-red-600 hover:text-red-700 ml-2"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+            ))}
+          </div>
+          <div className="border-t pt-4">
+            <div className="flex justify-between items-center mb-4">
+              <span className="font-semibold">Total: ₹{totalPrice.toLocaleString()}</span>
+            </div>
+            <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold" size="lg">
+              Proceed to Checkout
+            </Button>
           </div>
         </div>
-        <div className="flex items-center space-x-2">
-          <Checkbox id="gst-credit" />
-          <Label htmlFor="gst-credit" className="text-sm font-normal text-gray-600">
-            Enter GSTIN to get 18% GST Credit
-          </Label>
-        </div>
-        <Button 
-          type="submit" 
-          className="w-full" 
-          style={{ backgroundColor: '#C5BAFF', borderColor: '#C5BAFF', color: '#000' }}
-        >
-          Contact Us
-        </Button>
-      </form>
+      )}
+
+      <div className="mt-6 text-sm text-center">
+        <span className="text-gray-600">Existing User? </span>
+        <Link to="/auth" className="font-medium text-green-600 hover:text-green-700">Login</Link>
+      </div>
     </aside>
   );
 };
