@@ -11,7 +11,7 @@ import Sidebar from "@/components/income-tax-e-filing-new/Sidebar";
 const IncomeTaxEFilingNew = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
-      <Header />
+     
       <main className="px-4 py-8 md:px-8 lg:px-16">
         <Breadcrumb />
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-8">

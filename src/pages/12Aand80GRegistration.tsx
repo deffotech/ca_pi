@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/12a-80g-registration/Breadcrumb';
 import HeroSection from '@/components/12a-80g-registration/HeroSection';
-import OffersSection from '@/components/12a-80g-registration/OffersSection';
+
 import DetailsSection from '@/components/12a-80g-registration/DetailsSection';
 import DocumentsSection from '@/components/12a-80g-registration/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -12,13 +12,12 @@ import { MessageSquare } from 'lucide-react';
 const TwelveAand80GRegistration = () => {
   return (
     <div className="bg-white min-h-screen">
-      <Header />
+      
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
             <DocumentsSection />
           </div>

@@ -1,0 +1,5 @@
+[33m1c81eac[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m inital commit
+[33m442f879[m 12a page offers and discount delted
+[33m5e59893[m Add missing pages
+[33ma70e884[m Update auth redirect and remove test banner
+[33m7ee5e16[m feat: Implement Google Authentication and Cart Functionality

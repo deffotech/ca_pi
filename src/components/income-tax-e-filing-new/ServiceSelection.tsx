@@ -36,8 +36,12 @@ const ServiceSelection = () => {
                 <li key={idx} className="text-sm text-gray-600">• {feature}</li>
               ))}
             </ul>
-            <Button className="bg-green-500 hover:bg-green-600 text-white w-full">
-              ADD
+            <Button 
+              className="w-full"
+              style={{ backgroundColor: '#C5BAFF', borderColor: '#C5BAFF', color: '#000' }}
+              onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+            >
+              Enquire Now
             </Button>
           </Card>
         ))}

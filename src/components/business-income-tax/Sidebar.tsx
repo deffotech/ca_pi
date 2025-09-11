@@ -21,8 +21,8 @@ const Sidebar = () => {
     <div className="space-y-6">
       <div className="bg-gray-50 p-6 rounded-lg text-center">
         <ShoppingCart className="h-12 w-12 text-gray-400 mx-auto mb-3" />
-        <h3 className="text-lg font-semibold mb-2">Your cart is empty</h3>
-        <p className="text-gray-600 text-sm mb-4">Browse our services and add some services in cart!</p>
+        <h3 className="text-lg font-semibold mb-2">Reach us now</h3>
+        <p className="text-gray-600 text-sm mb-4">Fill out the form below and we'll contact you immediately.</p>
         
         <div className="space-y-3">
           <div className="text-left">
@@ -50,7 +50,7 @@ const Sidebar = () => {
             onClick={handleAddToCart}
             className="w-full bg-green-600 hover:bg-green-700"
           >
-            Add to Cart
+            Contact Us
           </Button>
         </div>
       </div>

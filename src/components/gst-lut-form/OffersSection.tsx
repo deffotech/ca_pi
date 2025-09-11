@@ -1,25 +1,8 @@
-import { Button } from "@/components/ui/button";
+
 import { ChevronRight } from "lucide-react";
-import { useCart } from "@/contexts/CartContext";
-import { useToast } from "@/hooks/use-toast";
+import AddToCartButton from "@/components/ui/AddToCartButton";
 
 const OffersSection = () => {
-  const { addToCart } = useCart();
-  const { toast } = useToast();
-
-  const handleAddToCart = () => {
-    addToCart({
-      id: 'gst-lut-form-basic',
-      name: 'GST LUT Form - Basic',
-      price: 1999
-    });
-    
-    toast({
-      title: "Added to Cart",
-      description: "GST LUT Form - Basic has been added to your cart.",
-    });
-  };
-
   return (
     <section>
         <div className="border rounded-lg p-6 shadow-sm bg-stone-50 border-dashed border-orange-400">
@@ -32,12 +15,12 @@ const OffersSection = () => {
                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Export/SEZ Invoice on LEDGERS</span></li>
                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Compliance Reminder Alerts</span></li>
             </ul>
-            <Button 
-              className="w-full mt-6 bg-white text-green-600 border border-green-600 hover:bg-green-50"
-              onClick={handleAddToCart}
-            >
-              ADD
-            </Button>
+            <AddToCartButton 
+                serviceId="gst-lut-form"
+                serviceName="GST LUT Form Filing"
+                price={2499}
+                className="w-full mt-6 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+            />
         </div>
         <div className="flex justify-between items-center mt-6 text-sm">
             <a href="#" className="text-blue-600 hover:underline">Terms and conditions</a>
@@ -67,3 +50,4 @@ const OffersSection = () => {
 };
 
 export default OffersSection;
+
