@@ -16,20 +16,21 @@ const Login = () => {
   const { toast } = useToast();
 
   useEffect(() => {
-    const checkUser = async () => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (event === 'SIGNED_IN' && session) {
+        navigate('/');
+      }
+    });
+
+    // Check current session
+    const checkSession = async () => {
       const { data: { session } } = await supabase.auth.getSession();
       if (session) {
         navigate('/');
       }
     };
-
-    checkUser();
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      if (session) {
-        navigate('/');
-      }
-    });
+    
+    checkSession();
 
     return () => subscription.unsubscribe();
   }, [navigate]);
