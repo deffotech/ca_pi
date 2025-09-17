@@ -20,7 +20,7 @@ const DetailsSection = () => {
           credibility of your business.
         </p>
         <p>
-          Get your FSSAI License registration fast and hassle-free with CA PI!
+          Get your FSSAI License registration fast and hassle-free with United Fillings!
           Our experts will guide you in choosing the right food category,
           ensuring your business meets all food safety standards and obtain
           FSSAI certificate!

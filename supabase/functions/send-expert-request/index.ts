@@ -57,7 +57,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to the customer
     await resend.emails.send({
-      from: "CA PI <onboarding@resend.dev>",
+      from: "United Fillings <onboarding@resend.dev>",
       to: [email],
       subject: "We received your expert assistance request!",
       html: `
@@ -73,7 +73,7 @@ const handler = async (req: Request): Promise<Response> => {
           
           <p>If you have any urgent questions, please feel free to call us directly at +91-8048-175-725.</p>
           
-          <p>Best regards,<br>CA PI Team</p>
+          <p>Best regards,<br>United Fillings Team</p>
         </div>
       `,
     });

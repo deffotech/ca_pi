@@ -36,7 +36,7 @@ const DetailsSection = () => {
         </ul>
         <p className="mt-2 text-gray-600">
           For those seeking guidance on GST return filing online or support with
-          managing their GST compliance, CA PI offers GST software designed to
+          managing their GST compliance, United Fillings offers GST software designed to
           streamline the process.
         </p>
       </div>

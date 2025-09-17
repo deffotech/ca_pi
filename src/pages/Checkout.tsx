@@ -76,10 +76,10 @@ const Checkout = () => {
               <div>
                 <div className="flex items-center mb-2">
                   <div className="bg-orange-500 rounded-full px-3 py-1 text-sm font-bold mr-3">
-                    CA PI
+                    United Fillings
                   </div>
                 </div>
-                <CardTitle className="text-xl">CA PI Private Limited</CardTitle>
+                <CardTitle className="text-xl">United Fillings Private Limited</CardTitle>
                 <p className="text-blue-100 text-sm mt-1">
                   Chennai, Chennai - 600031
                   <br />
@@ -247,7 +247,7 @@ const Checkout = () => {
                   <div className="text-sm text-gray-700 space-y-1">
                     <p className="flex items-center">
                       <Mail className="h-4 w-4 mr-2" />
-                      Email: billing@CA PI.com
+                      Email: billing@United Fillings.com
                     </p>
                     <p className="flex items-center">
                       <Phone className="h-4 w-4 mr-2" />

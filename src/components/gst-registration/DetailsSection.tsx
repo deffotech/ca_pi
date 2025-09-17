@@ -392,10 +392,10 @@ const DetailsSection = () => {
       </div>
       <div>
         <h2 className="text-2xl font-bold text-gray-800">
-          Get GST Registration Online quickly through CA PI
+          Get GST Registration Online quickly through United Fillings
         </h2>
         <p className="mt-2 text-gray-600">
-          You can obtain your GST registration online through CA PI with a
+          You can obtain your GST registration online through United Fillings with a
           reasonable GST registration cost. Enter your name, phone number and
           email to begin the GST number apply process.
         </p>
@@ -426,7 +426,7 @@ const DetailsSection = () => {
           government with information regarding their sales, purchases, and
           taxes collected and disbursed. In India, every GST-registered taxpayer
           must submit these returns consistently, even if there were no sales or
-          purchases during a particular period. CA PI helps you with GST
+          purchases during a particular period. United Fillings helps you with GST
           registration and stay compliant with affordable GST registration
           costs.
         </p>

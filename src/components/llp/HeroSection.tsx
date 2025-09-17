@@ -48,18 +48,6 @@ const HeroSection = () => {
             </div>
             <span className="text-gray-600 ml-2 text-sm font-medium">(2638)</span>
           </div>
-
-          <div className="mt-4">
-            <Select defaultValue="instant">
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Instant Name Application for LLP" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="instant">Instant Name Application for LLP</SelectItem>
-                <SelectItem value="normal">Normal Name Application for LLP</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
             <div className="border-2 border-dashed border-yellow-400 rounded-lg p-4 relative pt-6">

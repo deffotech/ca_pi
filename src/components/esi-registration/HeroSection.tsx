@@ -20,7 +20,7 @@ const HeroSection = () => {
               <div className="z-10 relative">
                 <h2 className="text-2xl font-bold">ESI REGISTRATION</h2>
                 <p className="mt-2 text-sm border-t border-b py-1">
-                  Online ESI Registration - Expert Support - CA PI
+                  Online ESI Registration - Expert Support - United Fillings
                 </p>
               </div>
             </div>

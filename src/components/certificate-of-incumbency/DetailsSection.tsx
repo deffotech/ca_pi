@@ -18,7 +18,7 @@ const DetailsSection = () => {
           assurance and legitimacy.
         </p>
         <p>
-          At CA PI, we simplify the process of obtaining an incumbency
+          At United Fillings, we simplify the process of obtaining an incumbency
           certificate. Our expert team handles all aspects, from document
           preparation to verification, ensuring your certificate is accurate and
           legally compliant. Simply reach out to us, and we will guide you
@@ -267,11 +267,11 @@ const DetailsSection = () => {
 
         <div>
           <h3 className="text-xl font-semibold mb-2">
-            Get a Certificate of Incumbency easily through CA PI!
+            Get a Certificate of Incumbency easily through United Fillings!
           </h3>
           <p>
             Obtaining a Certificate of Incumbency for your company is
-            straightforward with CA PI. Our comprehensive services ensure you
+            straightforward with United Fillings. Our comprehensive services ensure you
             get all the necessary documentation quickly and efficiently.
           </p>
           <p className="mt-2">
@@ -304,7 +304,7 @@ const DetailsSection = () => {
             </li>
           </ul>
           <p className="mt-2">
-            To get your Certificate of Incumbency via CA PI, simply reach out to
+            To get your Certificate of Incumbency via United Fillings, simply reach out to
             us, and we’ll guide you through the process from start to finish.
             Focus on growing your business while we take care of your compliance
             needs.

@@ -58,7 +58,7 @@ const Sidebar = () => {
 
       <div className="mt-6 text-sm text-center">
         <span className="text-gray-600">Existing User? </span>
-        <Link to="/auth" className="font-medium text-green-600 hover:text-green-700">Login</Link>
+        <Link to="/login" className="font-medium text-green-600 hover:text-green-700">Login</Link>
       </div>
     </aside>
   );

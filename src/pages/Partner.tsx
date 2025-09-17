@@ -76,7 +76,7 @@ const Partner = () => {
                 Partnership Program
               </h1>
               <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-                Partner with CA PI to provide comprehensive business services to your clients. 
+                Partner with United Fillings to provide comprehensive business services to your clients. 
                 Our enterprise solutions are designed for accounting firms, consultants, and business service providers.
               </p>
             </div>
@@ -85,7 +85,7 @@ const Partner = () => {
               {/* Content */}
               <div>
                 <h2 className="text-3xl font-bold mb-6">
-                  Why Partner with CA PI?
+                  Why Partner with United Fillings?
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -161,7 +161,7 @@ const Partner = () => {
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Ready to Partner with CA PI?
+              Ready to Partner with United Fillings?
             </h2>
             <p className="text-xl text-gray-600 mb-12">
               Contact our partnership team to discuss how we can work together to serve your clients better.

@@ -33,7 +33,7 @@ const HeroSection = () => {
             authority over their creations.
           </p>
           <p className="mt-2 text-gray-600">
-            At CA PI, we have streamlined the process of Registration of a
+            At United Fillings, we have streamlined the process of Registration of a
             Copyright in India to make securing your intellectual property
             straightforward and effective. With years of experience in
             intellectual property, our team is equipped with the knowledge to

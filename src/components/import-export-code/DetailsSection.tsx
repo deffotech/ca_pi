@@ -37,13 +37,13 @@ const DetailsSection = () => {
           sending shipments and receiving payments from overseas clients.
         </p>
         <p className="text-gray-700">
-          CA PI is here to simplify the process for you. Our comprehensive IEC
+          United Fillings is here to simplify the process for you. Our comprehensive IEC
           registration services make it easier than ever to obtain the essential
           IEC certificate and import and export license, ensuring that you're
           well-prepared to explore the global trade landscape.
         </p>
         <p className="text-center font-semibold">
-          Obtain Your IEC Number Today through CA PI!
+          Obtain Your IEC Number Today through United Fillings!
         </p>
 
         <Section title="What is IEC Code (Import Export Code)?">
@@ -296,15 +296,15 @@ const DetailsSection = () => {
           </ol>
         </Section>
 
-        <Section title="Streamline Your IEC Application with CA PI">
+        <Section title="Streamline Your IEC Application with United Fillings">
           <p>
-            CA PI can assist you in obtaining an Importer Exporter Code (IEC) in
+            United Fillings can assist you in obtaining an Importer Exporter Code (IEC) in
             India. Here's how we can help:
           </p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
               <span className="font-semibold">Information and Guidance:</span>{" "}
-              CA PI can provide you with detailed information about the Import
+              United Fillings can provide you with detailed information about the Import
               export code application process, including the eligibility
               criteria and the documents required.
             </li>
@@ -327,24 +327,24 @@ const DetailsSection = () => {
             </li>
             <li>
               <span className="font-semibold">IEC Certificate Delivery:</span>{" "}
-              Once your ICE Code is approved, CA PI can help you obtain and
+              Once your ICE Code is approved, United Fillings can help you obtain and
               deliver your IEC certificate and import export license.
             </li>
             <li>
               <span className="font-semibold">Expert Consultation:</span> If you
               have any queries or concerns regarding IEC or IEC Code check or
-              international trade, CA PI' experts can provide you with
+              international trade, United Fillings' experts can provide you with
               professional guidance.
             </li>
           </ul>
           <p>
-            Using CA PI for your IEC application can save you time and ensure
+            Using United Fillings for your IEC application can save you time and ensure
             that the process is handled efficiently and accurately, allowing you
             to focus on your import and export activities.
           </p>
         </Section>
         <p className="text-center font-semibold">
-          Get Started with CA PI Today!
+          Get Started with United Fillings Today!
         </p>
       </CardContent>
     </Card>

@@ -21,7 +21,7 @@ const DetailsSection = () => {
         </p>
 
         <p>
-          At CA PI, we understand the importance of obtaining Section 12A and
+          At United Fillings, we understand the importance of obtaining Section 12A and
           80G registrations for your non-profit organisation. We offer
           comprehensive assistance and guidance throughout the registration
           process to help you get the benefits and privileges provided under

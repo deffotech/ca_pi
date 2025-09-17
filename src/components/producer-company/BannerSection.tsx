@@ -15,7 +15,7 @@ const BannerSection = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-2">PRODUCER COMPANY</h2>
             <h3 className="text-xl md:text-2xl font-bold mb-4">REGISTRATION</h3>
             <p className="text-blue-100 text-sm md:text-base">
-              From Start to Finish, We Help You Launch your business with CA PI
+              From Start to Finish, We Help You Launch your business with United Fillings
             </p>
           </div>
         </div>

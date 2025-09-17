@@ -14,13 +14,13 @@ const DetailsSection = () => {
         KYC form, sometimes with a late fee, depending on the delay.
       </p>
       <p>
-        If you're a director needing to fulfill annual KYC requirements, CA PI
+        If you're a director needing to fulfill annual KYC requirements, United Fillings
         makes it simple and hassle-free. Our experts are ready to assist you
         with your DIN eKYC filing to ensure you remain compliant with MCA
         regulations.
       </p>
       <p>
-        <strong>Complete Your DIN KYC Filing Effortlessly with CA PI!</strong>
+        <strong>Complete Your DIN KYC Filing Effortlessly with United Fillings!</strong>
       </p>
 
       <h3>Director Identification Number (DIN)</h3>
@@ -169,9 +169,9 @@ const DetailsSection = () => {
         requirements.
       </p>
 
-      <h3>Streamline Your DIN eKYC Filing with CA PI!</h3>
+      <h3>Streamline Your DIN eKYC Filing with United Fillings!</h3>
       <p>
-        At CA PI, we offer comprehensive assistance at every stage of the DIN
+        At United Fillings, we offer comprehensive assistance at every stage of the DIN
         eKYC Filing process through DIR-3 KYC form filing:
       </p>
       <ul>
@@ -209,7 +209,7 @@ const DetailsSection = () => {
           compliance.
         </li>
         <li>
-          <strong>Digital Signature Facilitation:</strong> CA PI provides
+          <strong>Digital Signature Facilitation:</strong> United Fillings provides
           assistance in obtaining and applying the required digital signature
           from a recognized professional to authenticate your form.
         </li>
@@ -229,14 +229,14 @@ const DetailsSection = () => {
           KYC form submission is successful.
         </li>
         <li>
-          <strong>Additional Support:</strong> CA PI provides reminders and
+          <strong>Additional Support:</strong> United Fillings provides reminders and
           assistance for annual compliance, ensuring timely and hassle-free
           submissions in subsequent years using the DIR-3 KYC Web service on the
           MCA portal.
         </li>
       </ul>
       <p>
-        With CA PI, you can be assured of a smooth and guided experience in
+        With United Fillings, you can be assured of a smooth and guided experience in
         filing Form DIR-3 KYC and staying compliant with MCA regulations.
       </p>
     </section>

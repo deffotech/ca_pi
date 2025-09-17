@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ShoppingCart } from "lucide-react";
 import { useCart } from '@/contexts/CartContext';
+import { Link } from 'react-router-dom';
 import { toast } from 'sonner';
 
 const Sidebar = () => {
@@ -25,9 +26,10 @@ const Sidebar = () => {
         <p className="text-gray-600 text-sm mb-4">Browse our services and add some services in cart!</p>
         
         <div className="space-y-3">
-          <div className="text-left">
-            <label className="text-sm text-gray-600">Existing User? Login</label>
-          </div>
+           <div className="mt-6 text-sm text-center">
+                  <span className="text-gray-600">Existing User? </span>
+                  <Link to="/login" className="font-medium text-green-600 hover:text-green-700">Login</Link>
+                </div>
           
           <Input placeholder="Name" className="w-full" />
           <Input placeholder="Email" className="w-full" />

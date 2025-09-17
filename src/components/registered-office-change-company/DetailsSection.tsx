@@ -16,7 +16,7 @@ const DetailsSection = () => {
         </p>
         <p>
           For companies looking to navigate this change of registered office
-          smoothly, CA PI offers expertise and support, ensuring efficient
+          smoothly, United Fillings offers expertise and support, ensuring efficient
           compliance with all legal requirements.
         </p>
         <p>

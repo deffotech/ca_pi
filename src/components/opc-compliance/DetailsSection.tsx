@@ -18,7 +18,7 @@ const DetailsSection = () => {
           As a One Person Company (OPC) in India, it is essential to comply with
           the government's annual compliance requirements to ensure that your
           company remains compliant with all the applicable laws and
-          regulations. At CA PI, we understand the importance of OPC Compliance
+          regulations. At United Fillings, we understand the importance of OPC Compliance
           requirements and are committed to helping One Person Companies meet
           their annual compliance for OPC requirements. Our team of experts is
           always available to assist you with any compliance-related queries and

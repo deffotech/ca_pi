@@ -1,14 +1,5 @@
 import { Star, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Link } from "react-router-dom";
 import AddToCartButton from "@/components/ui/AddToCartButton";
 import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
@@ -61,22 +52,6 @@ const HeroSection = () => {
             software license for invoicing, GST E-invoicing and GST filing
             through LEDGERS.
           </p>
-
-          {/* <div className="mt-4">
-            <Select defaultValue="gst-software-registration">
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Select a service" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="gst-software-registration">
-                  GST Software & Registration
-                </SelectItem>
-                <SelectItem value="gst-filing-registration">
-                  GST Filing & Registration - 6 Months
-                </SelectItem>
-              </SelectContent>
-            </Select>
-          </div> */}
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <Card className="border-green-500 border-2">

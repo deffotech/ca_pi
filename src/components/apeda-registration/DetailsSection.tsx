@@ -55,12 +55,12 @@ const DetailsSection = () => {
             indispensable asset for Indian exporters.
           </p>
           <p className="mt-4">
-            CA PI can help you obtain your APEDA Registration smoothly and
+            United Fillings can help you obtain your APEDA Registration smoothly and
             efficiently, ensuring you meet all requirements with ease.
           </p>
           <p className="text-green-600 font-semibold mt-4">
             Ready to Expand Your Export Business? Get Your APEDA Registration
-            with CA PI Today!
+            with United Fillings Today!
           </p>
         </div>
 

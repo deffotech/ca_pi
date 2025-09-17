@@ -9,7 +9,7 @@ const HeroSection = () => {
       <p className="text-gray-600 mb-6 leading-relaxed">
         Setting up a subsidiary in India can be a transformative step for
         expanding your business operations and accessing one of the world's
-        largest and most dynamic markets. At CA PI, we specialise in providing
+        largest and most dynamic markets. At United Fillings, we specialise in providing
         comprehensive and tailored services for incorporating a foreign
         subsidiary in India. Our team of experts is here to guide you through
         the complexities of Indian subsidiary registration, from understanding

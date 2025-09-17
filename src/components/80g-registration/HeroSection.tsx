@@ -25,7 +25,7 @@ const HeroSection = () => {
             <span className="ml-2 text-sm text-gray-600">(96)</span>
           </div>
           <p className="text-gray-600 mb-4">
-            Get 80G registration for your charitable organization with CA PI and
+            Get 80G registration for your charitable organization with United Fillings and
             allow donors to claim tax deductions.
           </p>
 

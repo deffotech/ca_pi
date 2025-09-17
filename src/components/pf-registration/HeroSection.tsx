@@ -20,7 +20,7 @@ const HeroSection = () => {
               <div className="z-10 relative">
                 <h2 className="text-2xl font-bold">PF REGISTRATION</h2>
                 <p className="mt-2 text-sm border-t border-b py-1">
-                  PF Registration - Online Application - CA PI
+                  PF Registration - Online Application - United Fillings
                 </p>
               </div>
             </div>

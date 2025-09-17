@@ -43,7 +43,7 @@ const HeroSection = () => {
             <span className="ml-2 text-sm text-gray-600">(9046)</span>
           </div>
           <p className="text-gray-600 mb-4 text-sm">
-            CA PI offers DSC token, DSC, DSC shipping and DSC support services.
+            United Fillings offers DSC token, DSC, DSC shipping and DSC support services.
             Additional cost applicable for certificate payable directly to
             Certifying Authority.
           </p>

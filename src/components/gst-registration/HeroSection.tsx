@@ -24,7 +24,7 @@ const HeroSection = () => {
           your business liable to pay GST and enabling authorities to monitor
           transactions effectively. Whether you meet the set criteria, are
           applying for a new GST registration, or wish to voluntarily obtain GST
-          registration, CA PI can help you seamlessly complete the process and
+          registration, United Fillings can help you seamlessly complete the process and
           stay compliant under the GST framework.
         </p>
         <p className="mt-2 text-gray-600">

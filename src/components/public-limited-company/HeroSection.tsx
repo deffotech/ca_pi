@@ -1,6 +1,7 @@
 import { Star, Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import SendRequestButton from "@/components/ui/SendRequestButton";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
+
 
 
 const HeroSection = () => {
@@ -44,15 +45,12 @@ const HeroSection = () => {
             <span className="ml-2 text-sm text-gray-600">(29)</span>
           </div>
           <p className="mt-4 text-gray-600">
-            Easily incorporate a Public Limited Company through CA PI. A minimum
+            Easily incorporate a Public Limited Company through United Fillings. A minimum
             of 3 Directors and 7 Shareholders are required to incorporate a
             Public Limited Company.
           </p>
 
           <div className="mt-6 border-2 border-dashed border-yellow-400 bg-yellow-50/50 rounded-lg p-4">
-            <p className="text-sm font-semibold text-gray-700 mb-4">
-              3 Exclusive Offers
-            </p>
             <h3 className="font-bold text-lg text-gray-800">Incorporation</h3>
             <ul className="mt-4 space-y-2 text-gray-600 text-sm">
               <li className="flex items-start">
@@ -89,10 +87,7 @@ const HeroSection = () => {
               </li>
             </ul>
             <div className="text-right mt-4">
-            <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
+          
             </div>
           </div>
           <div className="mt-4 flex justify-between text-sm">

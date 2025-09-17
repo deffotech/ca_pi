@@ -213,10 +213,10 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold mb-4">
-          Streamline Your ITR 6 Filing with CA PI!
+          Streamline Your ITR 6 Filing with United Fillings!
         </h2>
         <p className="text-gray-600 mb-4">
-          CA PI offers comprehensive support for ITR 6 filing, ensuring a smooth
+          United Fillings offers comprehensive support for ITR 6 filing, ensuring a smooth
           and hassle-free experience for companies. With expert guidance from
           our team of professionals, we assist in understanding the specific
           requirements and deadlines associated with ITR 6. Our services include
@@ -224,7 +224,7 @@ const DetailsSection = () => {
           with the Income Tax Act.
         </p>
         <p className="text-gray-600">
-          Ready to simplify your ITR 6 filing process? Contact CA PI now for
+          Ready to simplify your ITR 6 filing process? Contact United Fillings now for
           expert assistance and ensure your compliance with ease.
         </p>
       </div>

@@ -25,7 +25,7 @@ const HeroSection = () => {
             <span className="ml-2 text-sm text-gray-600">(5)</span>
           </div>
           <p className="text-gray-600 mb-4">
-            Get your Incumbency Certificate with CA PI- verify your key
+            Get your Incumbency Certificate with United Fillings- verify your key
             officers' authority easily.
           </p>
 

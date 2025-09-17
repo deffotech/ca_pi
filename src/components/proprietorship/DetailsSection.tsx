@@ -38,7 +38,7 @@ const DetailsSection = () => {
         no more than 5 employees.
       </Paragraph>
       <Paragraph>
-        CA PI can assist you to register proprietorship firm online, a simple
+        United Fillings can assist you to register proprietorship firm online, a simple
         and efficient business structure that is ideal for solo entrepreneurs.
         With our expert guidance and streamlined process, you can start your
         proprietorship firm registration online quickly and hassle-free. Start
@@ -56,7 +56,7 @@ const DetailsSection = () => {
         Services Tax) Registration, which must be secured under the proprietor's
         name to formalize the business's proprietorship status. This sole
         proprietorship registration online signifies that the proprietor is
-        conducting business within the framework of a proprietorship. CA PI
+        conducting business within the framework of a proprietorship. United Fillings
         helps you to register proprietorship firm online easily and
         effortlessly.
       </Paragraph>
@@ -174,10 +174,10 @@ const DetailsSection = () => {
         </ListItem>
       </ul>
 
-      <SubTitle>Register Proprietorship Firm Online through CA PI</SubTitle>
+      <SubTitle>Register Proprietorship Firm Online through United Fillings</SubTitle>
       <Paragraph>
         You can easily complete proprietorship firm registration online through
-        CA PI. For a sole proprietorship registration, only the PAN & Aadhaar
+        United Fillings. For a sole proprietorship registration, only the PAN & Aadhaar
         card of the business owner is required. We can help you obtain the
         following registrations in less than 15 days:
       </Paragraph>
@@ -189,7 +189,7 @@ const DetailsSection = () => {
       </ul>
       <Paragraph>
         Once, you have registered for the proprietorship firm registration
-        online on CA PI, please follow the steps below and upload the following
+        online on United Fillings, please follow the steps below and upload the following
         documents by logging into LEDGERS.
       </Paragraph>
       <ol className="list-decimal list-inside text-gray-600 space-y-2">
@@ -197,7 +197,7 @@ const DetailsSection = () => {
         <li>Go to Services Tab & Select Proprietorship Engagement</li>
         <li>Upload your PAN & Aadhar Card Copy</li>
         <li>
-          An CA PI Registration Expert will file the registration application
+          An United Fillings Registration Expert will file the registration application
           with GST Department and Bank for Current Account.
         </li>
         <li>
@@ -215,7 +215,7 @@ const DetailsSection = () => {
 
       <SubTitle>Obtaining GST Registration for Proprietorship</SubTitle>
       <Paragraph>
-        GST registration for a proprietorship will be obtained by CA PI as a
+        GST registration for a proprietorship will be obtained by United Fillings as a
         part of the service of register proprietorship firm online. The
         following documents are required for GST registration:
       </Paragraph>
@@ -251,7 +251,7 @@ const DetailsSection = () => {
       <Paragraph>
         Udyam Registration can be obtained online to avail various benefits
         available for small and medium sized businesses. Once the GST
-        registration is obtained, the CA PI team would help obtain UDYAM
+        registration is obtained, the United Fillings team would help obtain UDYAM
         registration by submitting Aadhaar card, PAN card and GST certificate to
         Government.
       </Paragraph>
@@ -288,14 +288,14 @@ const DetailsSection = () => {
         From state to state, the process for acquiring a Shop and Establishment
         registration certificate changes. It is available both online and
         offline. In most states, Shop and Establishment Act registration can be
-        obtained within 2-3 weeks. CA PI helps you simplify the process of how
+        obtained within 2-3 weeks. United Fillings helps you simplify the process of how
         to register proprietorship firm.
       </Paragraph>
 
       <SubTitle>Timelines for Sole Proprietorship Firm Registration</SubTitle>
       <Paragraph>
         A sole proprietorship firm registration can normally be done in India
-        through CA PI in less than 15 days. However, the timelines for
+        through United Fillings in less than 15 days. However, the timelines for
         registration will vary from case to case, depending on the government
         and bank processing timelines.
       </Paragraph>

@@ -59,7 +59,7 @@ const HeroSection = () => {
           <span className="text-gray-600 ml-2 text-sm">(23158)</span>
         </div>
         <p className="mt-4 text-gray-600">
-          Secure your Trademark with CA PI.com seamless filing. Covers
+          Secure your Trademark with United Fillings.com seamless filing. Covers
           government fees for one class, ensuing hassle-free protection.
         </p>
         <div className="mt-6">

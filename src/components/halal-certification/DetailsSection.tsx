@@ -55,7 +55,7 @@ const DetailsSection = () => {
     {
       step: "1",
       title: "Application",
-      description: "The business wishing to obtain Halal Certification must apply to one of the Certification Bodies. At CA PI, we help businesses understand the requirements for obtaining Halal Certification and provide guidance on the application process."
+      description: "The business wishing to obtain Halal Certification must apply to one of the Certification Bodies. At United Fillings, we help businesses understand the requirements for obtaining Halal Certification and provide guidance on the application process."
     },
     {
       step: "2",
@@ -84,7 +84,7 @@ const DetailsSection = () => {
             consumption by Muslims.
           </p>
           <p>
-            At CA PI, we offer a Halal Certificate Service to help businesses obtain Halal India 
+            At United Fillings, we offer a Halal Certificate Service to help businesses obtain Halal India 
             Certification for their products and services. Our team of experts can guide you through 
             the certification process and ensure that your products and services meet the requirements 
             for Halal Certification.
@@ -193,7 +193,7 @@ const DetailsSection = () => {
         {/* Conclusion */}
         <div>
           <p>
-            CA PI can provide comprehensive services to businesses seeking Halal Certification, from 
+            United Fillings can provide comprehensive services to businesses seeking Halal Certification, from 
             consultation to document preparation, audit assistance, and certification support.
           </p>
         </div>

@@ -36,7 +36,7 @@ const HeroSection = () => {
           </div>
           <p className="text-gray-600 mt-4 mb-6">
             Directors with DIN must submit their KYC details through e-Form DIR
-            3 KYC. File your e-Form DIR 3 KYC effortlessly with CA PI.
+            3 KYC. File your e-Form DIR 3 KYC effortlessly with United Fillings.
           </p>
 
           <div className="mb-6">

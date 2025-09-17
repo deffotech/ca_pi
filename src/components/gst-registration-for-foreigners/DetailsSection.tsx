@@ -16,7 +16,7 @@ const DetailsSection = () => {
           vibrant markets.
         </p>
         <p className="mt-4">
-          Recognizing the importance of this registration, CA PI offers
+          Recognizing the importance of this registration, United Fillings offers
           specialized services to facilitate the GST registration process for
           foreigners. With expert guidance and streamlined procedures, we
           simplify the complexities of tax compliance, making it easier for
@@ -428,7 +428,7 @@ const DetailsSection = () => {
           </li>
         </ul>
         <p className="mt-4">
-          CA PI experts can guide you through obtaining GST registration for
+          United Fillings experts can guide you through obtaining GST registration for
           NRIs.
         </p>
       </div>
@@ -490,16 +490,16 @@ const DetailsSection = () => {
 
       <div>
         <h3 className="text-xl font-bold text-gray-800">
-          CA PI: Expert Assistance for GST Registration for Foreigners
+          United Fillings: Expert Assistance for GST Registration for Foreigners
         </h3>
         <p className="mt-4">
-          CA PI can provide significant support and expertise in facilitating
+          United Fillings can provide significant support and expertise in facilitating
           GST registration, ensuring a smooth and compliant entry into the
           Indian market. Here’s how we can help:
         </p>
         <ul className="list-disc list-inside mt-4 space-y-2">
           <li>
-            <span className="font-semibold">Expert Guidance:</span> CA PI offers
+            <span className="font-semibold">Expert Guidance:</span> United Fillings offers
             access to a team of experts knowledgeable in GST regulations,
             including specific provisions applicable to NRIs. We can provide
             tailored advice based on your business's unique needs.
@@ -520,13 +520,13 @@ const DetailsSection = () => {
           </li>
           <li>
             <span className="font-semibold">Timely Submissions:</span>{" "}
-            Understanding the importance of deadlines, CA PI can help ensure
+            Understanding the importance of deadlines, United Fillings can help ensure
             that your GST registration application is submitted within the
             stipulated time frames, avoiding unnecessary delays.
           </li>
           <li>
             <span className="font-semibold">Ongoing Support:</span> Beyond the
-            initial registration, CA PI can provide ongoing support for GST
+            initial registration, United Fillings can provide ongoing support for GST
             compliance, including filing GST returns, maintaining records, and
             updating registration details as required.
           </li>

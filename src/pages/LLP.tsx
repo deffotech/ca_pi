@@ -6,7 +6,7 @@ import HeroSection from '@/components/llp/HeroSection';
 import Sidebar from '@/components/llp/Sidebar';
 import DetailsSection from '@/components/llp/DetailsSection';
 import ComparisonTable from '@/components/proprietorship/ComparisonTable';
-import OffersSection from '@/components/consultation/OffersSection';
+
 import PricingSection from '@/components/llp/PricingSection';
 
 const LLP = () => {
@@ -19,7 +19,7 @@ const LLP = () => {
             <div className="lg:col-span-8 space-y-8">
               <HeroSection />
               <PricingSection />
-              <OffersSection />
+             
               <DetailsSection />
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">Proprietorship vs Limited Liability Partnership (LLP) vs Company</h2>

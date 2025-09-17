@@ -13,7 +13,7 @@ const DetailsSection = () => {
         their business activities in compliance with GST regulations.
       </p>
       <p>
-        At CA PI, we simplify revoking your Goods and Services Tax (GST)
+        At United Fillings, we simplify revoking your Goods and Services Tax (GST)
         registration process. Our expert team is here to assist you in smoothly
         navigating through the revocation procedure, ensuring compliance with
         all relevant regulations.
@@ -290,9 +290,9 @@ const DetailsSection = () => {
         </li>
       </ul>
 
-      <h3>Get Started with CA PI' GST Revocation Service</h3>
+      <h3>Get Started with United Fillings' GST Revocation Service</h3>
       <p>
-        Get started with CA PI' GST Revocation Service and streamline the
+        Get started with United Fillings' GST Revocation Service and streamline the
         process of reinstating your cancelled GST registration. Our expert team
         is equipped to guide you through every step, ensuring that your
         application is handled efficiently and compliantly. From gathering the
@@ -344,7 +344,7 @@ const DetailsSection = () => {
       </ul>
 
       <p>
-        Ready to restore your GST registration? Contact CA PI today for expert
+        Ready to restore your GST registration? Contact United Fillings today for expert
         assistance with your GST revocation.
       </p>
     </section>

@@ -17,7 +17,7 @@ const DetailsSection = () => {
           medical emergencies, or other unforeseen circumstances.
         </p>
         <p>
-          CA PI offers expert assistance to streamline the PF registration
+          United Fillings offers expert assistance to streamline the PF registration
           process for companies. With comprehensive support for PF apply online,
           we ensure that the registration is handled efficiently, allowing
           businesses to comply with regulatory requirements without hassle.
@@ -354,28 +354,28 @@ const DetailsSection = () => {
 
         <div>
           <h3 className="text-xl font-semibold mb-2">
-            Streamline Your PF Registration with CA PI
+            Streamline Your PF Registration with United Fillings
           </h3>
           <p>
-            CA PI can help streamline the PF registration process with
+            United Fillings can help streamline the PF registration process with
             affordable PF registration charges. Our experts provide
             comprehensive support, ensuring your registration is completed
             accurately and efficiently. From preparing for EPFO registration
             online and submitting all necessary documents to obtaining your PF
             code, we manage the entire PF apply online process, allowing you to
             focus on growing your business. With our user-friendly platform and
-            dedicated customer service, you can trust CA PI to handle your PF
+            dedicated customer service, you can trust United Fillings to handle your PF
             registration online with the utmost professionalism and reasonable
             PF registration charges.
           </p>
           <p className="mt-2 font-semibold">
-            Ready to simplify your PF registration? Contact CA PI today and let
+            Ready to simplify your PF registration? Contact United Fillings today and let
             our experts take care of everything for you!
           </p>
           <p className="mt-4">
             Once PF registration is completed, you must regularly file PF
             returns to report employee contributions and ensure compliance with
-            statutory requirements. CA PI experts can assist you in managing
+            statutory requirements. United Fillings experts can assist you in managing
             these filings efficiently, ensuring timely compliance and avoiding
             penalties.
           </p>

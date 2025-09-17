@@ -21,7 +21,7 @@ const HeroSection = () => {
                 <h2 className="text-2xl font-bold">ISO Certification</h2>
                 <p className="mt-2 text-lg">Digital & Hassle-Free</p>
                 <p className="mt-4 text-sm font-light">
-                  Let CA PI simplify your ISO certification process.
+                  Let United Fillings simplify your ISO certification process.
                 </p>
               </div>
               <img

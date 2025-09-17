@@ -28,7 +28,7 @@ const HeroSection = () => {
               <span className="ml-2 text-gray-600">(5)</span>
             </div>
             <p className="mt-4 text-gray-600">
-              Get BIS Certification with CA PI to ensure your products meet
+              Get BIS Certification with United Fillings to ensure your products meet
               Indian safety and quality standards.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-6">

@@ -17,7 +17,7 @@ const DetailsSection = () => {
           more employees.
         </p>
         <p>
-          At CA PI, our team of experts is dedicated to assisting businesses in
+          At United Fillings, our team of experts is dedicated to assisting businesses in
           navigating the complexities of ESI and PF registration. With our
           comprehensive understanding of regulatory requirements and a
           client-centric approach, we ensure a seamless and hassle-free ESI EPF
@@ -37,7 +37,7 @@ const DetailsSection = () => {
           </p>
           <p>
             Complying with the intricate regulations stipulated by the
-            government can pose a significant challenge for employers. CA PI'
+            government can pose a significant challenge for employers. United Fillings'
             ESI experts are available to assist you with these matters.
           </p>
         </div>
@@ -332,7 +332,7 @@ const DetailsSection = () => {
           <p>
             These are crucial obligations that must be met. Other compliance
             regulations for EPF and ESIC registration have to be followed which
-            you can ask those to our CA PI experts.
+            you can ask those to our United Fillings experts.
           </p>
         </div>
 
@@ -345,7 +345,7 @@ const DetailsSection = () => {
             completely online system, making it more accessible and efficient.
             Businesses looking to register under ESIC can now complete the
             entire process through the official ESIC portal. For those who find
-            navigating online EPF ESIC registration a challenge, CA PI offers
+            navigating online EPF ESIC registration a challenge, United Fillings offers
             expert assistance. Our team is well-versed in the intricacies of the
             ESIC online portal and can guide you through each step, ensuring a
             smooth and successful EPF ESIC registration for your business.
@@ -354,10 +354,10 @@ const DetailsSection = () => {
 
         <div className="space-y-4">
           <h3 className="text-xl font-semibold">
-            Why Choose CA PI for ESI registration?
+            Why Choose United Fillings for ESI registration?
           </h3>
           <p>
-            CA PI' team of seasoned professionals, including chartered
+            United Fillings' team of seasoned professionals, including chartered
             accountants and legal experts, offers premier legal and compliance
             ESI PF registration services in India. We recognize the critical
             nature of an employer's obligation for ESI registration and approach

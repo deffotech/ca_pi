@@ -27,7 +27,7 @@ const HeroSection = () => {
             <span className="ml-2 text-sm text-gray-600">(110)</span>
           </div>
           <p className="text-gray-600 mb-4">
-            Obtain 12A registration effortlessly with CA PI to get tax-exemption
+            Obtain 12A registration effortlessly with United Fillings to get tax-exemption
             for your charitable organization.
           </p>
 

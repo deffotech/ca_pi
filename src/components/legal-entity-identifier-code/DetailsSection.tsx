@@ -403,13 +403,13 @@ const DetailsSection = () => {
 
         <section>
           <h3 className="text-xl font-semibold mb-2">
-            Obtain Your LEI Code Seamlessly with CA PI!
+            Obtain Your LEI Code Seamlessly with United Fillings!
           </h3>
           <p>
-            Secure your LEI Code effortlessly through CA PI, your trusted
+            Secure your LEI Code effortlessly through United Fillings, your trusted
             partner in business compliance. Through this service, we help
             companies subjected to LEI number applicability to obtain the Legal
-            Entity Identifier Code. At CA PI, we streamline the process of
+            Entity Identifier Code. At United Fillings, we streamline the process of
             collecting the LEI requirements and obtaining your Legal Entity
             Identifier, ensuring that it is both straightforward and compliant
             with global standards.
@@ -423,7 +423,7 @@ const DetailsSection = () => {
             financial marketplace.
           </p>
           <p className="mt-2 font-semibold">
-            Secure your LEI code effortlessly with CA PI and ensure your
+            Secure your LEI code effortlessly with United Fillings and ensure your
             business meets global financial compliance standards!
           </p>
         </section>

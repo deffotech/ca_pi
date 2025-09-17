@@ -31,7 +31,7 @@ const HeroSection = () => {
             <p className="mt-4 text-gray-600">
               APEDA Registration is essential for exporters of agricultural and
               processed food products. Simplify the registration process and
-              receive your RCMC certificate quickly with CA PI.
+              receive your RCMC certificate quickly with United Fillings.
             </p>
 
             <div className="border rounded-lg p-4 mt-6 relative border-dashed border-green-500">

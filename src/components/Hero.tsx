@@ -334,7 +334,7 @@ const Hero = () => {
             </h2>
             <p className="text-sm md:text-base text-gray-600 max-w-4xl mx-auto px-2">
               Grow your business and remain compliant by partnering with
-              CA PI for a range of high quality, business services from
+              United Fillings for a range of high quality, business services from
               incorporation to payroll delivered through a seamless online
               platform.
             </p>

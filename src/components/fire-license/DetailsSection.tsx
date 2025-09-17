@@ -44,7 +44,7 @@ const DetailsSection = () => {
           mercantile buildings, residential apartments, industries, custodial
           institutions, and other related buildings. The fire extinguisher
           business license in India ensures the fire safety of these buildings.
-          CA PI can assist in registering for a Fire and Safety Licence and
+          United Fillings can assist in registering for a Fire and Safety Licence and
           obtain the certificate of fire safety.
         </p>
       </div>
@@ -270,10 +270,10 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold mb-4">
-          Applying for Fire Licence through CA PI
+          Applying for Fire Licence through United Fillings
         </h2>
         <p className="text-gray-600">
-          CA PI can be a valuable resource for businesses seeking a Fire License
+          United Fillings can be a valuable resource for businesses seeking a Fire License
           in India. We offer expert guidance and support throughout the Fire
           license apply process, including preparing the application, compiling
           necessary documents, and ensuring timely submission. With a team of

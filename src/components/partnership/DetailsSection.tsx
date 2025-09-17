@@ -13,7 +13,7 @@ const DetailsSection = () => {
           formalizing your partnership and ensuring its legal recognition.
         </p>
         <p>
-          At CA PI, we understand that navigating the intricacies of partnership
+          At United Fillings, we understand that navigating the intricacies of partnership
           firm registration process can be daunting. That's why we offer a
           comprehensive and hassle-free partnership firm registration online
           service designed to meet your needs with affordable partnership firm
@@ -90,7 +90,7 @@ const DetailsSection = () => {
           create a deed to register partnership deed.
         </p>
         <p>
-          Get expert help from CA PI to easily register your firm with
+          Get expert help from United Fillings to easily register your firm with
           affordable partnership firm registration cost!
         </p>
 
@@ -308,12 +308,12 @@ const DetailsSection = () => {
         </ol>
         <p>
           This is the comprehensive step-by-step process to register partnership
-          firm. Get expert help from CA PI to seamlessly complete your
+          firm. Get expert help from United Fillings to seamlessly complete your
           partnership firm registration process.
         </p>
 
         <h3 className="text-xl font-bold text-gray-800 mt-6">
-          How can CA PI help in Partnership Firm Registration?
+          How can United Fillings help in Partnership Firm Registration?
         </h3>
         <p>
           We offer comprehensive assistance in Partnership Firm Registration,
@@ -329,7 +329,7 @@ const DetailsSection = () => {
           ongoing responsibilities of operating a registered partnership firm.
         </p>
         <p>
-          With CA PI, you can confidently navigate the partnership firm
+          With United Fillings, you can confidently navigate the partnership firm
           registration online process, knowing that your partnership is
           established efficiently, allowing you to concentrate on your
           business's growth. Our effective solutions and reasonable partnership

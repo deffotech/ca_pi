@@ -51,7 +51,7 @@ const HeroSection = () => {
             <p className="text-gray-600">
               LEI Code is required for companies involved in global financial
               transactions. Get your Legal Entity Identifier Code quickly and
-              easily with CA PI.
+              easily with United Fillings.
             </p>
 
             <Select defaultValue="1">

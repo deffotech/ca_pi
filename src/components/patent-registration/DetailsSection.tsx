@@ -461,16 +461,16 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold text-gray-800">
-          Get Patent Registration with CA PI
+          Get Patent Registration with United Fillings
         </h2>
         <p className="mt-2 text-gray-600">
-          CA PI is your trusted partner in safeguarding intellectual innovations
+          United Fillings is your trusted partner in safeguarding intellectual innovations
           and guiding you on how to apply for patent in India. The patent
-          registration process in India can be intricate, but with CA PI, it's
+          registration process in India can be intricate, but with United Fillings, it's
           simplified. Our expert team, proficient in the Indian patent system,
           provides comprehensive assistance, ensuring your application is
           compliant and robust, all with affordable patent registration fees.
-          Choose CA PI to transform your innovative concepts into protected
+          Choose United Fillings to transform your innovative concepts into protected
           assets and navigate the complexities of the patent application
           seamlessly.
         </p>

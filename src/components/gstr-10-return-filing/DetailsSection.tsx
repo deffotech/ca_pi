@@ -202,33 +202,33 @@ const DetailsSection = () => {
 
       <div>
         <h3 className="text-xl font-bold text-gray-800 mb-2">
-          Benefits of filing GSTR-10 through CA PI:
+          Benefits of filing GSTR-10 through United Fillings:
         </h3>
         <p className="text-gray-600">
-          CA PI is the country's top online platform for business tax filing and
+          United Fillings is the country's top online platform for business tax filing and
           one of the most trusted online filing services for GST returns. Filing
-          GSTR-10 through CA PI offers several advantages, making us a preferred
+          GSTR-10 through United Fillings offers several advantages, making us a preferred
           choice for taxpayers.
         </p>
         <ul className="list-disc list-inside text-gray-600 mt-2 space-y-1">
           <li>
-            Convenience: Filing GSTR-10 through CA PI is a hassle-free process.
+            Convenience: Filing GSTR-10 through United Fillings is a hassle-free process.
             Our user-friendly platform is simple to use, ensuring that the
             procedure is carried out efficiently and correctly.
           </li>
           <li>
-            Accuracy: CA PI ensures accuracy by validating the data entered in
+            Accuracy: United Fillings ensures accuracy by validating the data entered in
             the GST return forms to avoid mistakes when filing the return.
           </li>
           <li>
-            Time-Saving: CA PI helps to save time by allowing taxpayers to file
+            Time-Saving: United Fillings helps to save time by allowing taxpayers to file
             their GSTR-10 return with just a few clicks. We send out timely
             reminders to taxpayers to ensure the return is filed before the due
             date. Additionally, we ensure the on-time delivery of filing-related
             documentation.
           </li>
           <li>
-            Professional Assistance: CA PI offers round-the-clock support from
+            Professional Assistance: United Fillings offers round-the-clock support from
             experienced professionals who are available to assist with any
             queries or issues related to filing GSTR-10 returns.
           </li>

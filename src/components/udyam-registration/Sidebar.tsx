@@ -16,7 +16,7 @@ const Sidebar = () => {
           </div>
           <div className="flex items-center space-x-2">
             <Mail className="h-4 w-4 text-green-600" />
-            <span className="text-sm">support@CA PI.com</span>
+            <span className="text-sm">support@United Fillings.com</span>
           </div>
           <Button className="w-full bg-green-600 hover:bg-green-700">
             Talk to Expert

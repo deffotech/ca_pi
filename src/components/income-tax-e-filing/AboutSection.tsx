@@ -28,7 +28,7 @@ const AboutSection = () => {
         technical glitches, ensuring a smoother submission process.
       </p>
       <p className="text-gray-600 mb-6">
-        CA PI simplifies the entire income tax e-filing process by providing an
+        United Fillings simplifies the entire income tax e-filing process by providing an
         online, user-friendly platform. Our experts guide you step-by-step, from
         auto-fetching your pre-filled data to assisting you in choosing the
         right tax regime. Whether you're an individual or a business owner, our
@@ -36,7 +36,7 @@ const AboutSection = () => {
         and requirements.
       </p>
       <p className="text-gray-600 mb-8">
-        Experience a seamless ITR filing process online with CA PI and say
+        Experience a seamless ITR filing process online with United Fillings and say
         goodbye to tax season stress!
       </p>
 

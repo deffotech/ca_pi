@@ -15,13 +15,13 @@ const DetailsSection = () => {
           company and the registration process to obtain all the benefits.
         </p>
         <p className="mt-4">
-          CA PI can help you start your public limited company in India with
+          United Fillings can help you start your public limited company in India with
           ease and efficiency. Our comprehensive services cover everything from
           company registration to compliance management, ensuring a smooth and
           hassle-free setup process for your business.
         </p>
         <p className="mt-4 font-semibold">
-          Start your public limited company registration today with CA PI!
+          Start your public limited company registration today with United Fillings!
         </p>
       </div>
       <div>
@@ -331,7 +331,7 @@ const DetailsSection = () => {
           licenses.
         </p>
         <p className="mt-4">
-          Whatever licenses or registrations you require, the experts at CA PI
+          Whatever licenses or registrations you require, the experts at United Fillings
           are here to assist you in starting your public limited company in
           India.
         </p>
@@ -339,11 +339,11 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold text-gray-800 mb-2">
-          Start Your Public Limited Company with Ease through CA PI!
+          Start Your Public Limited Company with Ease through United Fillings!
         </h2>
         <p>
           Starting your public limited company registration is straightforward
-          and efficient with CA PI. With a proven track record of expert
+          and efficient with United Fillings. With a proven track record of expert
           guidance and a commitment to a smooth, compliant service, we
           streamline the entire registration process. From handling all
           necessary documentation, including DSC, DIN, MOA, and AOA, to ensuring
@@ -351,7 +351,7 @@ const DetailsSection = () => {
           equipped to support you at every step.
         </p>
         <p className="mt-4">
-          Choose CA PI to leverage our expertise and focus more on growing your
+          Choose United Fillings to leverage our expertise and focus more on growing your
           business while we take care of the bureaucratic hurdles.
         </p>
         <p className="mt-4 font-semibold">

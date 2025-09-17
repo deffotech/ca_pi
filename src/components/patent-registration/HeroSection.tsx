@@ -24,11 +24,11 @@ const HeroSection = () => {
           the Indian Patent Act of 1970 for patent registration.
         </p>
         <p className="mt-2 text-gray-600">
-          At CA PI, we understand the intricacies of the landscape of patent
+          At United Fillings, we understand the intricacies of the landscape of patent
           filing in India. With our experts and streamlined processes, we guide
           you step-by-step, ensuring your invention stands out and receives the
           protection for your Patent India it rightfully deserves. Ready to
-          safeguard your innovation? Let CA PI lead the way to a hassle-free
+          safeguard your innovation? Let United Fillings lead the way to a hassle-free
           patent registration online process.
         </p>
       </div>

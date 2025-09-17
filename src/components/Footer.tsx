@@ -67,7 +67,7 @@ const Footer = () => {
               <span className="text-xl font-bold">PI</span>
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              CA PI is your trusted partner for comprehensive business services. We provide end-to-end solutions for company registration, compliance, taxation, and legal documentation across India.
+              United Fillings is your trusted partner for comprehensive business services. We provide end-to-end solutions for company registration, compliance, taxation, and legal documentation across India.
             </p>
             
             {/* Contact Info */}
@@ -198,7 +198,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
             <div className="mb-2 md:mb-0">
-              © {currentYear} CA PI. All rights reserved.
+              © {currentYear} United Fillings. All rights reserved.
             </div>
             <div className="flex items-center space-x-4">
               <span>Made with ❤️ in India</span>

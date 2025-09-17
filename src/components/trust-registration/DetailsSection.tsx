@@ -19,7 +19,7 @@ const DetailsSection = () => {
         <p className="text-gray-600 mt-2">
           If you are contemplating the creation of a trust for non-profit or
           charitable purposes, registration of a trust is vital to ensure its
-          effective operation and compliance with legal obligations. At CA PI,
+          effective operation and compliance with legal obligations. At United Fillings,
           we have a dedicated team of professionals ready to support you every
           step of the way during the trust registration and getting a trust
           registration certificate download. We clear up your doubts and
@@ -430,10 +430,10 @@ const DetailsSection = () => {
 
       <div>
         <h3 className="text-xl font-bold text-gray-800 mb-3">
-          How can CA PI help in securing Trust Registration?
+          How can United Fillings help in securing Trust Registration?
         </h3>
         <p className="text-gray-600">
-          At CA PI, our team of experts is committed to providing you with the
+          At United Fillings, our team of experts is committed to providing you with the
           necessary support for charitable trust registration and ensuring
           compliance. It involves intricate legal implications that require
           careful attention. Our experts will resolve your questions regarding

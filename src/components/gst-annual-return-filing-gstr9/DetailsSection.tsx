@@ -16,7 +16,7 @@ const DetailsSection = () => {
           returns submitted within the corresponding year.
         </p>
         <p className="mt-2 text-gray-600">
-          At CA PI, we specialize in simplifying the GSTR 9 filing process and
+          At United Fillings, we specialize in simplifying the GSTR 9 filing process and
           ensure filing it before GSTR 9 due date. Recognizing that dealing with
           taxes can often be confusing, we aim to streamline the procedure and
           guide you through each step. Leveraging our expertise and
@@ -24,7 +24,7 @@ const DetailsSection = () => {
           with accuracy.
         </p>
         <p className="mt-2 text-gray-600">
-          Make CA PI your partner in GSTR-9 filings. Get started today and
+          Make United Fillings your partner in GSTR-9 filings. Get started today and
           experience a stress-free way to fulfill your tax responsibilities.
         </p>
       </div>
