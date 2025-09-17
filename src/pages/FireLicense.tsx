@@ -11,7 +11,7 @@ import { MessageSquare } from "lucide-react";
 const FireLicense = () => {
   return (
     <div className="bg-white">
-      <Header />
+    
       <main className="max-w-screen-xl mx-auto px-4 py-8 md:px-8 lg:px-16">
         <Breadcrumb />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">

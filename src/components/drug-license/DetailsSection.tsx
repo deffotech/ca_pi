@@ -95,10 +95,10 @@ const DetailsSection = () => {
           daunting.
         </p>
         <p>
-          CA PI offers expert guidance and support for the Drug License
+          United Fillings offers expert guidance and support for the Drug License
           registration Process and obtaining the licence. With our deep
           understanding of the regulatory landscape and a comprehensive approach
-          to handling applications, CA PI helps demystify the process, ensuring
+          to handling applications, United Fillings helps demystify the process, ensuring
           that businesses and individuals can secure their pharma licence
           efficiently while fully complying with the legal mandates.
         </p>
@@ -415,19 +415,19 @@ const DetailsSection = () => {
 
         <div className="bg-green-50 p-6 rounded-lg text-center">
           <h3 className="text-xl font-bold text-gray-800">
-            Simplify Your Drug License Process with CA PI
+            Simplify Your Drug License Process with United Fillings
           </h3>
           <p className="mt-2 text-gray-600">
             Securing a drug license can be a straightforward and hassle-free
-            process when you choose CA PI. With our expertise in navigating the
-            complex regulatory framework of the pharmaceutical industry, CA PI
+            process when you choose United Fillings. With our expertise in navigating the
+            complex regulatory framework of the pharmaceutical industry, United Fillings
             offers comprehensive support, from preparing your application to
             ensuring compliance with all legal requirements. Our knowledgeable
             team provides personalised guidance, making the entire process
             efficient including registration, check drug licence status,
             obtaining the certificate and minimising potential errors or delays.
             Whether you're new to the pharmaceutical sector or looking to expand
-            your existing operations, CA PI can help streamline your journey to
+            your existing operations, United Fillings can help streamline your journey to
             obtaining a drug license.
           </p>
           <Button className="mt-4 bg-green-500 hover:bg-green-600">

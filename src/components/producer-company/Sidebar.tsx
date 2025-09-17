@@ -1,44 +1,138 @@
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
-import { ShoppingBag } from 'lucide-react';
+import { ShoppingBag, Trash2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useCart } from '@/contexts/CartContext';
+import { useState } from 'react';
 
 const Sidebar = () => {
+  const { items, totalPrice, totalItems, clearCart, removeFromCart } = useCart();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    gstin: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 sticky top-24">
-      <div className="text-center">
-        <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
-        <h3 className="mt-2 text-lg font-semibold text-gray-800">Your cart is empty</h3>
-        <p className="mt-1 text-sm text-gray-500">Browse our services and add some services in cart!</p>
+      {/* Cart Section */}
+      <div className="mb-6">
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="text-lg font-semibold text-gray-800">Your Cart ({totalItems})</h3>
+          {items.length > 0 && (
+            <button 
+              onClick={clearCart}
+              className="text-red-500 hover:text-red-700 text-sm"
+            >
+              Clear All
+            </button>
+          )}
+        </div>
+        
+        {items.length === 0 ? (
+          <div className="text-center py-6">
+            <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
+            <h3 className="mt-2 text-lg font-semibold text-gray-800">Your cart is empty</h3>
+            <p className="mt-1 text-sm text-gray-500">Browse our services and add some services in cart!</p>
+          </div>
+        ) : (
+          <>
+            <div className="space-y-3 mb-4">
+              {items.map((item) => (
+                <div key={item.id} className="flex justify-between items-start">
+                  <div className="flex-1">
+                    <h4 className="font-medium text-sm text-gray-800">{item.name}</h4>
+                    <p className="text-sm text-gray-600">₹{item.price.toLocaleString()} x {item.quantity}</p>
+                  </div>
+                  <Button
+                    onClick={() => removeFromCart(item.id)}
+                    variant="ghost"
+                    size="sm"
+                    className="text-red-500 hover:text-red-700 p-1"
+                  >
+                    <Trash2 className="h-4 w-4" />
+                  </Button>
+                </div>
+              ))}
+            </div>
+            
+            <div className="border-t pt-4 mb-4">
+              <div className="flex justify-between items-center text-lg font-bold">
+                <span>Total: ₹{totalPrice.toLocaleString()}</span>
+              </div>
+            </div>
+            
+            <Button className="w-full bg-green-600 hover:bg-green-700 text-white mb-4">
+              Proceed to Checkout
+            </Button>
+          </>
+        )}
       </div>
 
-      <div className="mt-6 text-sm text-center">
+      {/* Form Section */}
+      <div className="space-y-4 mb-6">
+        <Input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleInputChange}
+          className="w-full"
+        />
+        <Input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleInputChange}
+          className="w-full"
+        />
+        <div className="flex gap-2">
+          <div className="flex items-center border border-gray-300 rounded-md px-3 py-2">
+            <img src="https://flagcdn.com/w20/in.png" alt="IN" className="w-5 h-3 mr-2" />
+            <span className="text-sm">+91</span>
+          </div>
+          <Input
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            value={formData.phone}
+            onChange={handleInputChange}
+            className="flex-1"
+          />
+        </div>
+        <div className="text-sm text-gray-600">
+          <Input
+            type="text"
+            name="gstin"
+            placeholder="Enter GSTIN to get 18% GST Credit"
+            value={formData.gstin}
+            onChange={handleInputChange}
+            className="w-full"
+          />
+        </div>
+      </div>
+
+      {/* Login Link */}
+      <div className="text-sm text-center mb-4">
         <span className="text-gray-600">Existing User? </span>
         <Link to="/auth" className="font-medium text-green-600 hover:text-green-700">Login</Link>
       </div>
 
-      <form className="mt-6 space-y-4">
-        <div>
-          <Input type="text" placeholder="Name" />
-        </div>
-        <div>
-          <Input type="email" placeholder="Email" />
-        </div>
-        <div className="flex">
-            <Input type="text" value="+91" readOnly className="w-16 rounded-r-none bg-gray-100 text-center" />
-            <Input type="tel" placeholder="Phone" className="rounded-l-none" />
-        </div>
-        <div className="flex items-center space-x-2">
-          <Checkbox id="gst-credit" />
-          <Label htmlFor="gst-credit" className="text-sm font-normal text-gray-600 cursor-pointer">Enter GSTIN to get 18% GST Credit</Label>
-        </div>
-        <Button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white font-bold text-base" size="lg">
-          Get Started
-        </Button>
-      </form>
+      {/* WhatsApp Chat Button */}
+      <Button className="w-full bg-green-500 hover:bg-green-600 text-white">
+        💬 Live Chat with Experts
+      </Button>
     </div>
   );
 };

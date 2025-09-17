@@ -21,7 +21,7 @@ const DetailsSection = () => {
             operations and ensures product authenticity.
           </p>
           <p className="mt-2">
-            At CA PI, we provide a simple, hassle-free, affordable barcode
+            At United Fillings, we provide a simple, hassle-free, affordable barcode
             registration online service to help you register barcodes for your
             product with a unique barcode. We assist you in obtaining and
             registering a barcode number with a barcode issuing agency. We also
@@ -294,7 +294,7 @@ const DetailsSection = () => {
 
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-2">
-            How can CA PI help with Barcode Registration?
+            How can United Fillings help with Barcode Registration?
           </h3>
           <p>
             Upload the necessary documents and business details on our web

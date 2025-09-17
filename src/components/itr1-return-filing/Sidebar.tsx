@@ -84,9 +84,9 @@ const Sidebar = () => {
       <Card className="p-6">
         <div className="grid grid-cols-3 gap-4 text-xs">
           <div>
-            <h4 className="font-semibold mb-2">CA PI</h4>
+            <h4 className="font-semibold mb-2">United Fillings</h4>
             <ul className="space-y-1 text-gray-600">
-              <li>About CA PI</li>
+              <li>About United Fillings</li>
               <li>Careers</li>
               <li>Contact Us</li>
             </ul>

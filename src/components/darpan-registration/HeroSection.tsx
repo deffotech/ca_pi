@@ -1,24 +1,24 @@
+
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Star, ChevronRight } from "lucide-react";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
     <Card className="overflow-hidden">
       <div className="grid md:grid-cols-12">
         <div className="md:col-span-5 flex items-center justify-center p-4">
-           <img src="/assets/darpan-hero.png" alt="Darpan Registration" className="object-contain rounded-lg max-h-[450px]" />
+           <img src="/lovable-uploads/darpan-hero.png" alt="Darpan Registration" className="object-contain rounded-lg max-h-[450px]" />
         </div>
         <div className="md:col-span-7 p-8">
           <h1 className="text-3xl font-bold">Darpan Registration</h1>
           <div className="flex items-center my-2">
-            <div className="flex text-yellow-400">
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-            </div>
+            {[...Array(5)].map((_, i) => (
+              <Star
+                key={i}
+                className="h-5 w-5 text-yellow-400 fill-yellow-400"
+              />
+            ))}
             <span className="ml-2 text-sm text-gray-600">(40)</span>
           </div>
           <p className="text-gray-600 mb-4">
@@ -35,7 +35,10 @@ const HeroSection = () => {
                 <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />Darpan Number</li>
                 <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />Darpan Certificate</li>
               </ul>
-              <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
+              <SendRequestButton 
+                serviceName="Darpan Registration"
+                className="mt-4 w-full"
+              />
             </CardContent>
           </Card>
           

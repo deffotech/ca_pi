@@ -207,17 +207,17 @@ const DetailsSection = () => {
       </div>
       <div>
         <h2 className="text-2xl font-bold text-gray-800 mb-4">
-          Simplify LUT Form Filing with CA PI
+          Simplify LUT Form Filing with United Fillings
         </h2>
         <p className="text-gray-600 leading-relaxed">
           Navigating the complexities of LUT (Letter of Undertaking) filing for
-          exporters has always been challenging. At CA PI, we specialize in
+          exporters has always been challenging. At United Fillings, we specialize in
           streamlining the process, allowing you to focus on expanding your
           export operations. Our experienced professionals understand the
           nuances of GST regulations and are well-equipped to guide you through
           the seamless submission of the GST RFD-11 form. We offer end-to-end
           support, from document preparation to online submission, ensuring
-          accuracy and compliance at every step. With CA PI by your side, you
+          accuracy and compliance at every step. With United Fillings by your side, you
           can unlock the benefits of tax-free exports without the hassle of
           navigating complex procedures. Simplify your filing of LUT in GST
           today and begin a smoother export journey with us.

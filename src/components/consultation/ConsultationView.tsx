@@ -78,7 +78,7 @@ const ConsultationView = () => {
               </div>
               <p className="mt-4 text-gray-600 text-sm">
                 Consult with top CAs, Lawyers, and business experts online,
-                anytime, anywhere with CA PI! Get expert guidance on accounting,
+                anytime, anywhere with United Fillings! Get expert guidance on accounting,
                 tax, legal, business, intellectual property & much more to help
                 your business grow.
               </p>

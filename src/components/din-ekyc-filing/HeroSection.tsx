@@ -6,6 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -17,7 +18,7 @@ const HeroSection = () => {
             alt="DIN eKYC Filing"
             className="rounded-lg shadow-lg w-full"
           />
-          <div className="mt-4 p-4 border-t">
+           <div className="mt-4 p-4 border-t">
             <p className="text-gray-600">PAN Card</p>
             <p className="text-gray-600">Aadhaar Card</p>
             <button className="text-blue-600 hover:underline mt-2">
@@ -28,18 +29,14 @@ const HeroSection = () => {
         <div className="p-1">
           <h1 className="text-3xl font-bold text-gray-800">DIN eKYC Filing</h1>
           <div className="flex items-center my-2">
-            <div className="flex text-yellow-400">
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-            </div>
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} fill="currentColor" className="w-5 h-5 text-yellow-400" />
+            ))}
             <span className="text-gray-600 ml-2">(5493)</span>
           </div>
           <p className="text-gray-600 mt-4 mb-6">
             Directors with DIN must submit their KYC details through e-Form DIR
-            3 KYC. File your e-Form DIR 3 KYC effortlessly with CA PI.
+            3 KYC. File your e-Form DIR 3 KYC effortlessly with United Fillings.
           </p>
 
           <div className="mb-6">
@@ -65,9 +62,10 @@ const HeroSection = () => {
                   DIN KYC Filing
                 </li>
               </ul>
-              <button className="mt-6 w-full bg-white border border-green-500 text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-green-50">
-                ADD
-              </button>
+              <SendRequestButton 
+                serviceName="DIN KYC"
+                className="mt-6 w-full"
+              />
             </div>
 
             <div className="border rounded-lg p-4 bg-gray-50 relative pt-8">
@@ -85,9 +83,10 @@ const HeroSection = () => {
                   2 Director / Partner
                 </li>
               </ul>
-              <button className="mt-6 w-full bg-white border border-green-500 text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-green-50">
-                ADD
-              </button>
+              <SendRequestButton 
+                serviceName="2 x DIN KYC"
+                className="mt-6 w-full"
+              />
             </div>
           </div>
 

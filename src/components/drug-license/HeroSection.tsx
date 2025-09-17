@@ -28,7 +28,7 @@ const HeroSection = () => {
             <span className="ml-2 text-sm text-gray-600">(2)</span>
           </div>
           <p className="text-gray-600 mb-4 text-sm">
-            CA PI offers comprehensive assistance in obtaining Drug Licenses for
+            United Fillings offers comprehensive assistance in obtaining Drug Licenses for
             manufacturing, sale, and distribution of pharmaceuticals. Our
             experts ensure compliance with regulatory requirements, enabling
             businesses to operate legally and efficiently.

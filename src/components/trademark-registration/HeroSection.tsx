@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 import {
   Select,
   SelectContent,
@@ -59,7 +59,7 @@ const HeroSection = () => {
           <span className="text-gray-600 ml-2 text-sm">(23158)</span>
         </div>
         <p className="mt-4 text-gray-600">
-          Secure your Trademark with CA PI.com seamless filing. Covers
+          Secure your Trademark with United Fillings.com seamless filing. Covers
           government fees for one class, ensuing hassle-free protection.
         </p>
         <div className="mt-6">
@@ -86,12 +86,10 @@ const HeroSection = () => {
                 <li>Trademark for one class</li>
                 <li>Trademark Software</li>
               </ul>
-              <Button
-                variant="outline"
-                className="w-full mt-4 border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-              >
-                ADD
-              </Button>
+              <SendRequestButton 
+                serviceName="Trademark Filing"
+                className="w-full mt-4"
+              />
             </CardContent>
           </Card>
           <Card className="border-green-500 border-2">
@@ -108,12 +106,10 @@ const HeroSection = () => {
                 <li>Trademark for one class</li>
                 <li>Trademark Software</li>
               </ul>
-              <Button
-                variant="outline"
-                className="w-full mt-4 border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-              >
-                ADD
-              </Button>
+              <SendRequestButton 
+                serviceName="Trademark Filing + Form 48"
+                className="w-full mt-4"
+              />
             </CardContent>
           </Card>
         </div>

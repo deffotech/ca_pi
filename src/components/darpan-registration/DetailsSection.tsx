@@ -23,7 +23,7 @@ const DetailsSection = () => {
             expand their impact.
           </p>
           <p>
-            Let CA PI simplify your NGO Darpan registration process. Gain
+            Let United Fillings simplify your NGO Darpan registration process. Gain
             official recognition, access government funding, and enhance your
             organisation's credibility with our expert assistance. Contact us
             today to get started!
@@ -335,10 +335,10 @@ const DetailsSection = () => {
 
         <div>
           <h3 className="text-xl font-semibold mb-2">
-            Easily Secure Your Darpan Portal Registration with CA PI!
+            Easily Secure Your Darpan Portal Registration with United Fillings!
           </h3>
           <p>
-            Simplify your NGO Darpan Registration process with CA PI! Our
+            Simplify your NGO Darpan Registration process with United Fillings! Our
             dedicated team of experts ensures that your NGO or Voluntary
             Organisation is registered accurately and efficiently. By partnering
             with us, you can quickly obtain your Unique Darpan ID and Darpan

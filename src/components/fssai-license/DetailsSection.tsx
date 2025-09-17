@@ -22,7 +22,7 @@ const DetailsSection = () => {
           safety and quality of the country's food products.
         </p>
         <p>
-          At CA PI, we understand the significance of obtaining an FSSAI license
+          At United Fillings, we understand the significance of obtaining an FSSAI license
           registration for your business. We're committed to making the FSSAI
           License online process seamless and hassle-free.
         </p>
@@ -209,21 +209,21 @@ const DetailsSection = () => {
           of non-compliance penalties and issues.
         </p>
 
-        <h3>Why Choose CA PI for Your Food License Needs?</h3>
+        <h3>Why Choose United Fillings for Your Food License Needs?</h3>
         <p>
           Obtaining an FSSAI License is essential for adhering to regulations,
           ensuring food safety, building customer confidence, and expanding
-          within the food industry. CA PI is your reliable partner for an FSSAI
+          within the food industry. United Fillings is your reliable partner for an FSSAI
           license apply online in India. Our team of experts simplifies the
           process, ensuring accurate documentation and a smooth submission
           experience. Whether you run a small business or a larger enterprise,
-          CA PI guides you through FSSAI requirements, streamlining compliance
+          United Fillings guides you through FSSAI requirements, streamlining compliance
           and allowing you to focus on your core business operations. Our
           experienced professionals will assist you in selecting the appropriate
           food category and license.
         </p>
         <p>
-          FSSAI license apply online through CA PI involves a straightforward
+          FSSAI license apply online through United Fillings involves a straightforward
           process:
         </p>
         <ul className="list-disc pl-5">

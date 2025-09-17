@@ -623,7 +623,7 @@ const DetailsSection = () => {
           </li>
         </ul>
         <p className="text-gray-600 leading-relaxed mt-4">
-          For effective replies, CA PI experts are here to guide you through the
+          For effective replies, United Fillings experts are here to guide you through the
           process, ensuring your response is comprehensive and compliant.
         </p>
       </div>
@@ -642,10 +642,10 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold text-gray-800 mb-4">
-          Choose CA PI for Simplified GST Solutions
+          Choose United Fillings for Simplified GST Solutions
         </h2>
         <p className="text-gray-600 leading-relaxed">
-          CA PI stands out as your trusted partner in navigating the
+          United Fillings stands out as your trusted partner in navigating the
           complexities of GST compliance. By facilitating effortless GST
           registration and meticulous GSTR filing, we proactively minimise the
           risk of receiving unwelcome GST notices. Should you receive any
@@ -654,7 +654,7 @@ const DetailsSection = () => {
           expertise. Our experts will craft and submit a comprehensive and
           compliant response to any GST notices on your behalf, ensuring that
           your business remains in good standing with minimal disruption. With
-          CA PI, you can file your annual return form before GSTR 9 last date
+          United Fillings, you can file your annual return form before GSTR 9 last date
           with confidence, knowing that you have a reliable partner guiding you
           through the process.
         </p>

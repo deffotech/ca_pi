@@ -17,14 +17,14 @@ const DetailsSection = () => {
           entitled to income tax exemption on their surplus income.
         </p>
         <p>
-          At CA PI, we understand the importance of obtaining Section 12A
+          At United Fillings, we understand the importance of obtaining Section 12A
           registration for your organization. We offer comprehensive assistance
           and guidance throughout the registration process to help you unlock
           the benefits and privileges provided under Section 12A of the Income
           Tax Act.
         </p>
         <p>
-          Contact CA PI today to embark on your journey toward 12A registration
+          Contact United Fillings today to embark on your journey toward 12A registration
           online and obtain a 12A Certificate for trusts, NGOs, etc. Let us
           handle the complexities while you focus on making a positive impact in
           society.
@@ -299,19 +299,19 @@ const DetailsSection = () => {
 
         <div>
           <h3 className="text-lg font-semibold mb-3">
-            Assistance with 12A Registration: How CA PI Can Help
+            Assistance with 12A Registration: How United Fillings Can Help
           </h3>
           <p>
-            CA PI offers valuable assistance for Section 12A registration,
+            United Fillings offers valuable assistance for Section 12A registration,
             ensuring a smooth and hassle-free process. With team of experienced
             professionals, we provide expert guidance every step of the way.
             From understanding the requirements to preparing the necessary
-            documentation, CA PI ensures that all the essential aspects of the
+            documentation, United Fillings ensures that all the essential aspects of the
             registration process are handled efficiently. We have extensive
             knowledge of the procedures, enabling them to easily navigate the
             complexities. By entrusting the Section 12A registration process to
-            CA PI, individuals, and organizations can save time and effort while
-            ensuring compliance with the necessary legal formalities. CA PI is
+            United Fillings, individuals, and organizations can save time and effort while
+            ensuring compliance with the necessary legal formalities. United Fillings is
             your trusted and reliable partner when it comes to seeking
             assistance with Section 12A registration. With our expertise and
             unwavering commitment to customer satisfaction, we provide

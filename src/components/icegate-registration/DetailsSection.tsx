@@ -23,7 +23,7 @@ const DetailsSection = () => {
           Bills of Entry. This registration is not just a procedural step; it's
           a strategic move towards faster customs clearance and enhanced
           transparency in international transactions. Understanding the
-          criticality of this process, CA PI offers specialized assistance to
+          criticality of this process, United Fillings offers specialized assistance to
           businesses, ensuring that their ICEGATE registration process is
           seamless and efficient.
         </p>
@@ -387,14 +387,14 @@ const DetailsSection = () => {
           entity.
         </p>
 
-        <h2>Simplify Your ICEGATE Registration with CA PI</h2>
+        <h2>Simplify Your ICEGATE Registration with United Fillings</h2>
         <p>
-          Choosing CA PI for a seamless ICEGATE registration and ICEGATE Login
+          Choosing United Fillings for a seamless ICEGATE registration and ICEGATE Login
           setup. It ensures that your business complies with all customs
           regulations without any complexities. We provide professional support
           from start to end, including creating a Digital signature ICEGATE.
           With a team of dedicated experts well-versed in the intricacies of
-          international trade regulations and the ICEGATE portal, CA PI provides
+          international trade regulations and the ICEGATE portal, United Fillings provides
           personalized guidance through every step of the registration process.
         </p>
         <Button>

@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 import {
   Select,
   SelectContent,
@@ -50,7 +51,7 @@ const HeroSection = () => {
             <p className="text-gray-600">
               LEI Code is required for companies involved in global financial
               transactions. Get your Legal Entity Identifier Code quickly and
-              easily with CA PI.
+              easily with United Fillings.
             </p>
 
             <Select defaultValue="1">
@@ -89,12 +90,10 @@ const HeroSection = () => {
                       LEI Number
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <SendRequestButton 
+                    serviceName="Legal Entity Identifier Code - 1 Year"
+                    className="mt-4 w-full"
+                  />
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -121,12 +120,10 @@ const HeroSection = () => {
                       LEI Number
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <SendRequestButton 
+                    serviceName="Legal Entity Identifier Code - 3 Years"
+                    className="mt-4 w-full"
+                  />
                 </CardContent>
               </Card>
             </div>

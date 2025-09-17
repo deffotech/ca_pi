@@ -75,7 +75,7 @@ const DetailsSection = () => {
           completed by the respective entity without fail.
         </p>
         <p className="font-semibold text-green-600">
-          Get expert help from CA PI for seamless professional tax payment based
+          Get expert help from United Fillings for seamless professional tax payment based
           on your state's rules and regulations!
         </p>
 
@@ -408,53 +408,53 @@ const DetailsSection = () => {
 
         <div>
           <h3 className="text-xl font-bold pt-4 mb-2">
-            Seamless Professional Tax Registration Services with CA PI
+            Seamless Professional Tax Registration Services with United Fillings
           </h3>
           <p>
-            CA PI can assist you in simplifying the process of obtaining a
+            United Fillings can assist you in simplifying the process of obtaining a
             Professional Tax Registration Certificate in India. Here's how our
             services can benefit you:
           </p>
           <ul className="list-disc list-inside space-y-1 mt-2">
             <li>
-              Expert Guidance: CA PI provides expert guidance on the Tax
+              Expert Guidance: United Fillings provides expert guidance on the Tax
               Registration process for professionals. Our team is well-versed in
               the nuances of tax regulations and can ensure that your
               registration complies with the latest rules.
             </li>
             <li>
-              Application Submission: CA PI will handle submitting your Tax
+              Application Submission: United Fillings will handle submitting your Tax
               Registration application to the relevant authorities on your
               behalf. This ensures accuracy and compliance with all legal
               requirements.
             </li>
             <li>
-              Timely Processing: With CA PI' professional handling, you can
+              Timely Processing: With United Fillings' professional handling, you can
               expect timely processing of your application, reducing waiting
               times and allowing you to obtain your P tax certificate promptly.
             </li>
             <li>
-              Customized Support: CA PI understands that each business and
+              Customized Support: United Fillings understands that each business and
               profession has unique requirements. We offer personalized support
               tailored to your needs, ensuring your registration aligns
               perfectly with your professional status.
             </li>
             <li>
               Compliance Assurance: Staying updated with ever-changing tax laws
-              and regulations is crucial. CA PI pays attention to the details,
+              and regulations is crucial. United Fillings pays attention to the details,
               ensuring that your registration complies with all necessary tax
               laws and guidelines.
             </li>
             <li>
               Customer Support: Should you have any questions or concerns during
-              the registration process, CA PI' customer support team is readily
+              the registration process, United Fillings' customer support team is readily
               available to address your queries and provide timely assistance.
             </li>
           </ul>
         </div>
 
         <p className="font-semibold text-green-600">
-          File Your Professional Taxes Efficiently with CA PI!
+          File Your Professional Taxes Efficiently with United Fillings!
         </p>
       </CardContent>
     </Card>

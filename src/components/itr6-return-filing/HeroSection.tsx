@@ -95,7 +95,7 @@ const HeroSection = () => {
           businesses avoid penalties and potential legal complications.
         </p>
         <p className="text-gray-600">
-          Ready to complete your company's ITR 6? CA PI experts are here to
+          Ready to complete your company's ITR 6? United Fillings experts are here to
           guide you through every step—let's begin your ITR-6 filing today!
         </p>
       </div>

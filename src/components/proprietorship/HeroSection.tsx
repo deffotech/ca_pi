@@ -1,14 +1,7 @@
 import { Star, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Link } from "react-router-dom";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -60,22 +53,6 @@ const HeroSection = () => {
             through LEDGERS.
           </p>
 
-          <div className="mt-4">
-            <Select defaultValue="gst-software-registration">
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Select a service" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="gst-software-registration">
-                  GST Software & Registration
-                </SelectItem>
-                <SelectItem value="gst-filing-registration">
-                  GST Filing & Registration - 6 Months
-                </SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <Card className="border-green-500 border-2">
               <CardContent className="p-4">
@@ -101,9 +78,22 @@ const HeroSection = () => {
                     LEDGERS GST Software - 1 Year License
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="gst-software-registration"
+                    serviceName="GST Software & Registration"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="gst-software-registration"
+                    serviceName="GST Software & Registration"
+                    price={2999}
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card>
@@ -136,55 +126,24 @@ const HeroSection = () => {
                     LEDGERS GST Software - 1 Year License
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="gst-filing-registration-6months"
+                    serviceName="GST Filing & Registration - 6 Months"
+                    price={4999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹4,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="gst-filing-registration-6months"
+                    serviceName="GST Filing & Registration - 6 Months"
+                    price={4999}
+                  />
+                </div>
               </CardContent>
             </Card>
-          </div>
-          <div className="flex justify-between mt-4 text-sm">
-            <Link to="#" className="text-blue-600 hover:underline">
-              Terms and conditions
-            </Link>
-            <Link to="#" className="text-blue-600 hover:underline">
-              Refer a Friend
-            </Link>
-          </div>
-
-          <div className="mt-6">
-            <h3 className="text-xl font-bold text-gray-800">
-              Offers and discounts
-            </h3>
-            <div className="mt-4 space-y-3">
-              <div className="flex items-center p-3 border rounded-lg">
-                <img
-                  src="assets/ledger.png"
-                  alt="Ledgers"
-                  className="w-10 h-10 mr-4"
-                />
-                <div>
-                  <p className="font-semibold">LEDGERS - Compliance Platform</p>
-                  <p className="text-sm text-gray-500">
-                    Invoicing, GST Filing, Banking and Payroll
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center p-3 border rounded-lg">
-                <img
-                  src="assets/gst.jpg"
-                  alt="GIN"
-                  className="w-10 h-10 mr-4"
-                />
-                <div>
-                  <p className="font-semibold">
-                    Save 18% with GST Registration
-                  </p>
-                  <p className="text-sm text-gray-500">
-                    Get GST eInvoice with Input Tax Credit
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

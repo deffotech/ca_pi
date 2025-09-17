@@ -34,7 +34,7 @@ const Features = () => {
       icon: Award,
       title: "Trusted by 10L+ Businesses",
       description:
-        "Join over 1 million satisfied customers who trust CA PI for their business and compliance needs.",
+        "Join over 1 million satisfied customers who trust United Fillings for their business and compliance needs.",
       color: "from-teal-500 to-teal-600",
     },
     {
@@ -51,7 +51,7 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Why Choose CA PI?
+            Why Choose United Fillings?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We make business registration and compliance simple, fast, and

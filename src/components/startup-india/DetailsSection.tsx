@@ -21,7 +21,7 @@ const DetailsSection = () => {
           succeed in a competitive market.
         </p>
         <p className="text-gray-600 mb-6">
-          CA PI is here to assist you with a quick and efficient Startup India
+          United Fillings is here to assist you with a quick and efficient Startup India
           registration process and obtain a Startup India certificate, enabling
           you to embark on your journey toward success.
         </p>
@@ -185,7 +185,7 @@ const DetailsSection = () => {
         </ol>
 
         <p className="text-gray-600 mt-6">
-          Choose CA PI for expert support in obtaining your Startup India
+          Choose United Fillings for expert support in obtaining your Startup India
           Certificate! Our team is dedicated to guiding you through every step
           of the startup india registration process, from company registration
           to securing your DPIIT certificate. We provide comprehensive

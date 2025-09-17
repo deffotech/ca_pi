@@ -32,7 +32,7 @@ const HeroSection = () => {
           <span className="ml-2 text-sm text-gray-600">(28)</span>
         </div>
         <p className="mt-4 text-gray-600">
-          GST Revocation service by CA PI helps businesses restore their
+          GST Revocation service by United Fillings helps businesses restore their
           canceled GST registration by assisting with application preparation,
           submission, and follow-up. Our experts ensure seamless and timely
           reinstatement, allowing businesses to resume operations without

@@ -433,10 +433,10 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold text-gray-800 mb-4">
-          Register Your Company through CA PI
+          Register Your Company through United Fillings
         </h2>
         <p className="text-gray-600 leading-relaxed">
-          CA PI specializes in Private limited Company Registration services in
+          United Fillings specializes in Private limited Company Registration services in
           India, providing comprehensive guidance and support throughout the
           registration process. Our team of professionals offers expert
           consultation tailored to your specific requirements and business goals
@@ -445,7 +445,7 @@ const DetailsSection = () => {
         </p>
         <p className="text-gray-600 leading-relaxed mt-2">
           Selecting the appropriate name for your company incorporation is
-          critical, and CA PI' experts will help you choose a unique and fitting
+          critical, and United Fillings' experts will help you choose a unique and fitting
           name that aligns with ROC guidelines. We'll conduct a name
           availability search and facilitate the reservation of your chosen
           name, reflecting your business identity.
@@ -463,13 +463,13 @@ const DetailsSection = () => {
           registration.
         </p>
         <p className="text-gray-600 leading-relaxed mt-2">
-          By choosing CA PI for your Company Registration needs, you can be
+          By choosing United Fillings for your Company Registration needs, you can be
           confident that your company registration process will be managed
           professionally and effectively. We aim to simplify the process with
           reasonable PVT LTD company registration fees, allowing you to
           concentrate on your business objectives while we address the legal
           requirements. Embark on your entrepreneurial journey with assurance by
-          registering your company through CA PI.
+          registering your company through United Fillings.
         </p>
       </div>
     </div>

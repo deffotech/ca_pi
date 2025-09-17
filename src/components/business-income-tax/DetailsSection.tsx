@@ -209,11 +209,11 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold mb-4">
-          How CA PI Can Assist with Business Tax Return Filings
+          How United Fillings Can Assist with Business Tax Return Filings
         </h2>
         <p className="text-gray-600 mb-4">
           Navigating the intricate world of business tax filing is made
-          effortless with CA PI. Our dedicated services offer comprehensive
+          effortless with United Fillings. Our dedicated services offer comprehensive
           support to ensure your tax obligations are met seamlessly. Our
           platform provides a user-friendly interface that guides you on how to
           file taxes for small business owners and file on or before income tax

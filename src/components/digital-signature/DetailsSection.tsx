@@ -342,7 +342,7 @@ const DetailsSection = () => {
             (CCA), renewing your DSC online requires fresh identity
             verification. You can easily renew your Digital Signature
             Certificate by following the same process as applying for a new DSC
-            on the CA PI website.
+            on the United Fillings website.
           </p>
         </section>
       </CardContent>

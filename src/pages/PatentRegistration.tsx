@@ -1,6 +1,5 @@
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Breadcrumb from "@/components/patent-registration/Breadcrumb";
 import HeroSection from "@/components/patent-registration/HeroSection";
 import DetailsSection from "@/components/patent-registration/DetailsSection";
@@ -11,7 +10,7 @@ import { MessageSquare } from "lucide-react";
 const PatentRegistration = () => {
   return (
     <div className="bg-white">
-      <Header />
+    
       <main className="max-w-screen-xl mx-auto px-4 py-8 md:px-8 lg:px-16">
         <Breadcrumb />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">

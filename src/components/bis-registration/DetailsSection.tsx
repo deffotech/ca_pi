@@ -19,7 +19,7 @@ const DetailsSection = () => {
           to favour certified items for their quality and safety.
         </p>
         <p>
-          Partner with CA PI to simplify the BIS certification process, boosting
+          Partner with United Fillings to simplify the BIS certification process, boosting
           consumer trust and confidence in your brand.
         </p>
 

@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Star, ChevronRight } from "lucide-react";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -44,7 +45,10 @@ const HeroSection = () => {
                   <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />RCMC Number</li>
                   <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />RCMC Certificate</li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
+                <SendRequestButton 
+                serviceName="12A Registration"
+                className="mt-4 w-full"
+              />
               </CardContent>
             </Card>
             <Card className="border-green-200">
@@ -57,7 +61,10 @@ const HeroSection = () => {
                   <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />RCMC Number</li>
                   <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />RCMC Certificate</li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
+                <SendRequestButton 
+                serviceName="12A Registration"
+                className="mt-4 w-full"
+              />
               </CardContent>
             </Card>
           </div>

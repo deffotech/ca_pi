@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -19,7 +20,7 @@ const HeroSection = () => {
               <div className="z-10 relative">
                 <h2 className="text-2xl font-bold">PF REGISTRATION</h2>
                 <p className="mt-2 text-sm border-t border-b py-1">
-                  PF Registration - Online Application - CA PI
+                  PF Registration - Online Application - United Fillings
                 </p>
               </div>
             </div>
@@ -70,12 +71,10 @@ const HeroSection = () => {
                     PF Number
                   </li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
+                <SendRequestButton 
+                  serviceName="PF Registration"
+                  className="mt-4 w-full"
+                />
               </CardContent>
             </Card>
 

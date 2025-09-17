@@ -1,92 +1,94 @@
-
-import { ShoppingBag } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useCart } from '@/contexts/CartContext';
-import { toast } from 'sonner';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useCart } from "@/contexts/CartContext";
+import { toast } from "sonner";
+import { Minus, Plus, X } from "lucide-react";
 
 const Sidebar = () => {
-  const { addToCart } = useCart();
+  const { items, addToCart, removeFromCart, totalPrice, clearCart } = useCart();
 
   const handleAddToCart = () => {
     addToCart({
-      id: 'opc-compliance',
-      name: 'OPC Compliance',
-      price: 7999
+      id: "opc-compliance",
+      name: "OPC Compliance",
+      price: 14999
     });
-    toast.success('OPC Compliance added to cart!');
+    toast.success("OPC Compliance added to cart!");
   };
 
   return (
-    <aside className="bg-gray-50 p-6 rounded-lg shadow-sm sticky top-8">
-      <div className="text-center">
-        <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
-        <h3 className="mt-2 text-xl font-semibold text-gray-900">Your cart is empty</h3>
-        <p className="mt-1 text-sm text-gray-500">Browse our services and add some services in cart!</p>
-      </div>
-
-      <div className="mt-6">
-        <p className="text-center text-sm">
-          Existing User? <Link to="/auth" className="font-medium text-green-600 hover:text-green-500">Login</Link>
-        </p>
-
-        <form action="#" method="POST" className="mt-4 space-y-4">
-          <div>
-            <label htmlFor="name" className="sr-only">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              autoComplete="name"
-              placeholder="Name"
-              className="block w-full rounded-md border-0 py-2 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm"
-            />
+    <div className="space-y-6">
+      {/* Pricing Section */}
+      <Card>
+        <CardHeader>
+          <CardTitle>OPC Compliance</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="text-center">
+            <div className="text-3xl font-bold text-green-600">₹14,999</div>
+            <p className="text-sm text-gray-600">All inclusive fee</p>
           </div>
-          <div>
-            <label htmlFor="email" className="sr-only">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              autoComplete="email"
-              placeholder="Email"
-              className="block w-full rounded-md border-0 py-2 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm"
-            />
-          </div>
-          <div>
-            <label htmlFor="phone" className="sr-only">Phone</label>
-            <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <span className="text-gray-500 sm:text-sm">🇮🇳 +91</span>
-              </div>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                autoComplete="tel"
-                placeholder="Phone"
-                className="block w-full rounded-md border-0 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm"
-              />
-            </div>
-          </div>
-          <div className="flex items-center">
-            <input
-              id="gst-credit"
-              name="gst-credit"
-              type="checkbox"
-              className="h-4 w-4 rounded border-gray-300 text-green-600 focus:ring-green-600"
-            />
-            <label htmlFor="gst-credit" className="ml-2 block text-sm text-gray-900">Enter GSTIN to get 18% GST Credit</label>
-          </div>
-          <button
-            type="button"
+          <Button 
             onClick={handleAddToCart}
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white"
           >
-            Add to Cart
-          </button>
-        </form>
-      </div>
-    </aside>
+            ADD TO CART
+          </Button>
+        </CardContent>
+      </Card>
+
+      {/* Cart Section */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center justify-between">
+            Your Cart
+            {items.length > 0 && (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={clearCart}
+                className="text-red-500 hover:text-red-700"
+              >
+                Clear All
+              </Button>
+            )}
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          {items.length === 0 ? (
+            <p className="text-gray-500 text-center py-4">Your cart is empty</p>
+          ) : (
+            <div className="space-y-4">
+              {items.map((item) => (
+                <div key={item.id} className="flex items-center justify-between p-3 border rounded-lg">
+                  <div className="flex-1">
+                    <h4 className="font-medium text-sm">{item.name}</h4>
+                    <p className="text-sm text-gray-600">₹{item.price.toLocaleString()}</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm">Qty: {item.quantity}</span>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => removeFromCart(item.id)}
+                      className="text-red-500 hover:text-red-700 h-6 w-6 p-0"
+                    >
+                      <X className="h-3 w-3" />
+                    </Button>
+                  </div>
+                </div>
+              ))}
+              <div className="border-t pt-4">
+                <div className="flex justify-between items-center font-bold">
+                  <span>Total:</span>
+                  <span>₹{totalPrice.toLocaleString()}</span>
+                </div>
+              </div>
+            </div>
+          )}
+        </CardContent>
+      </Card>
+    </div>
   );
 };
 

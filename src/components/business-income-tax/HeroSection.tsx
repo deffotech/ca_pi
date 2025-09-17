@@ -30,7 +30,7 @@ const HeroSection = () => {
           </p>
           <p className="text-gray-600 mb-6">
             Business Income Tax return filings in India just got more
-            straightforward with CA PI. We are here to help businesses easily
+            straightforward with United Fillings. We are here to help businesses easily
             file their tax returns and offer LEDGERS small business tax filing
             software.
           </p>

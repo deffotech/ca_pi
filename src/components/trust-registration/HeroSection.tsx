@@ -32,7 +32,7 @@ const HeroSection = () => {
           <p className="mt-4 text-gray-600">
             A Trust can be registered in India to conduct not for profit or
             charitable activities. Get a Trust Deed prepared by a Lawyer through
-            CA PI along stamp paper.
+            United Fillings along stamp paper.
           </p>
         </div>
       </div>

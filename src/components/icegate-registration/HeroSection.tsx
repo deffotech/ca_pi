@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronDown, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -22,10 +22,9 @@ const HeroSection = () => {
           <div className="md:col-span-2 space-y-4">
             <h1 className="text-3xl font-bold">ICEGATE Registration</h1>
             <div className="flex items-center space-x-2 text-yellow-500">
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
+              {[...Array(4)].map((_, i) => (
+                <Star key={i} fill="currentColor" className="w-5 h-5" />
+              ))}
               <Star className="w-5 h-5 text-gray-300" />
               <a href="#" className="text-blue-600 hover:underline text-sm">
                 (32)
@@ -64,12 +63,10 @@ const HeroSection = () => {
                       ICEGATE Registration Number
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <SendRequestButton 
+                    serviceName="ICEGATE Registration"
+                    className="w-full mt-2"
+                  />
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -96,12 +93,10 @@ const HeroSection = () => {
                       Class 3 Encrypted DSC
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <SendRequestButton 
+                    serviceName="ICEGATE Registration + DSC"
+                    className="w-full mt-2"
+                  />
                 </CardContent>
               </Card>
             </div>

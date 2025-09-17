@@ -5,7 +5,7 @@ const Breadcrumb = () => {
   return (
     <nav className="flex items-center space-x-1 text-sm text-gray-600">
       <Link to="/" className="hover:text-green-600">
-        CA PI
+        United Fillings
       </Link>
       <ChevronRight className="h-4 w-4" />
       <Link to="/registrations" className="hover:text-green-600">

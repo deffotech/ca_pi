@@ -72,13 +72,13 @@ const DetailsSection = () => {
         seem overwhelming.
       </p>
       <p>
-        That's where CA PI steps in. We provide expert guidance and
+        That's where United Fillings steps in. We provide expert guidance and
         comprehensive solutions tailored to your company's needs, simplifying
         the compliance process from registration to ongoing obligations. Our
         team of specialists is equipped with in-depth knowledge of Indian
         business laws and regulations, ensuring your company meets company
         compliance requirements. Whether you are a startup or an established
-        enterprise, CA PI is your partner in simplifying compliance.
+        enterprise, United Fillings is your partner in simplifying compliance.
       </p>
       <p className="font-semibold">
         Let's make Company compliance hassle-free together! Get Started now!
@@ -252,10 +252,10 @@ const DetailsSection = () => {
       </p>
 
       <h3 className="text-xl font-bold pt-4">
-        Streamline Company Compliance with CA PI
+        Streamline Company Compliance with United Fillings
       </h3>
       <p>
-        With CA PI, entrepreneurs can seamlessly complete their company
+        With United Fillings, entrepreneurs can seamlessly complete their company
         compliance requirements. We offer access to the LEDGERS compliance
         platform, a dedicated Compliance Manager, accounting, secretarial
         services, MCA annual return filing, and income tax return filing.

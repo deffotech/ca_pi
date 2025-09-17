@@ -19,12 +19,12 @@ const DetailsSection = () => {
             be overstated, as it not only provides legal recognition but also
             safeguards businesses against potential legal issues. The Shop Act
             registration process can be challenging with the varied requirements
-            across different states. At CA PI, we offer expert assistance in
+            across different states. At United Fillings, we offer expert assistance in
             seamlessly managing your Shop and Establishment Act registration and
             obtaining the Shop Act licence online.
           </p>
           <p>
-            Contact CA PI today for professional guidance and a hassle-free
+            Contact United Fillings today for professional guidance and a hassle-free
             registration experience.
           </p>
         </div>
@@ -368,10 +368,10 @@ const DetailsSection = () => {
 
         <div className="space-y-2">
           <h3 className="text-xl font-semibold">
-            Why Choose CA PI for Shop and Establishment Registration?
+            Why Choose United Fillings for Shop and Establishment Registration?
           </h3>
           <p>
-            CA PI is a highly recommended choice for handling the Shop and
+            United Fillings is a highly recommended choice for handling the Shop and
             Establishment Act registration process due to its extensive
             expertise and user-friendly services. We provide a streamlined,
             efficient approach to registration under shop & establishment act,
@@ -382,7 +382,7 @@ const DetailsSection = () => {
             chances of errors or delays.
           </p>
           <p>
-            Ready to ensure your business is fully compliant? Contact CA PI
+            Ready to ensure your business is fully compliant? Contact United Fillings
             today for professional guidance and a hassle-free registration
             experience.
           </p>

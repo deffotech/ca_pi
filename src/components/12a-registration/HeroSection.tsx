@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, ChevronRight } from "lucide-react";
+import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -26,7 +27,7 @@ const HeroSection = () => {
             <span className="ml-2 text-sm text-gray-600">(110)</span>
           </div>
           <p className="text-gray-600 mb-4">
-            Obtain 12A registration effortlessly with CA PI to get tax-exemption
+            Obtain 12A registration effortlessly with United Fillings to get tax-exemption
             for your charitable organization.
           </p>
 
@@ -35,7 +36,7 @@ const HeroSection = () => {
               <div className="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full inline-block mb-2">
                 2 Exclusive Offers
               </div>
-              <h3 className="font-bold mb-2">Basic</h3>
+              <h3 className="font-bold mb-2">12A Registration</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-center">
                   <ChevronRight className="h-4 w-4 mr-1 text-green-500" />
@@ -54,9 +55,10 @@ const HeroSection = () => {
                   12A Certificate
                 </li>
               </ul>
-              <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                ADD
-              </Button>
+              <SendRequestButton 
+                serviceName="12A Registration"
+                className="mt-4 w-full"
+              />
             </CardContent>
           </Card>
 

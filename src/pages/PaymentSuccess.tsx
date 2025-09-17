@@ -66,7 +66,7 @@ const PaymentSuccess = () => {
                 For any queries regarding your order, please contact us:
               </p>
               <p className="text-sm text-gray-600">
-                Email: billing@CA PI.com | Phone: +91 8068301312
+                Email: billing@United Fillings.com | Phone: +91 8068301312
               </p>
             </div>
 

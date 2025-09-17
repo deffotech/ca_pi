@@ -47,7 +47,7 @@ const OffersSection = () => {
             <div>
               <p className="font-bold">YES Bank Current Account</p>
               <p className="text-sm text-gray-600">
-                Lifetime zero-balance account for CA PI customers.*
+                Lifetime zero-balance account for United Fillings customers.*
               </p>
             </div>
           </div>

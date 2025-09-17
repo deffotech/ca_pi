@@ -11,7 +11,7 @@ const DetailsSection = () => {
           limited companies. Nevertheless, the potential fines for
           non-compliance can be significant. While a Private Limited company
           might face penalties of INR 1 lakh for non-compliance, LLPs could
-          incur penalties of up to INR 5 lakh. At CA PI, we understand the
+          incur penalties of up to INR 5 lakh. At United Fillings, we understand the
           critical importance of adhering to these annual compliances of LLP
           requirements, and our services are tailored to assist LLPs in meeting
           their obligations efficiently and effectively.

@@ -13,7 +13,7 @@ const DetailsSection = () => {
           deductions on their contributions. This financial incentive makes
           donating to your organisation more appealing and can boost your
           fundraising efforts. If you are a charitable organisation seeking 80G
-          registration, CA PI is here to help. Our team can guide you through
+          registration, United Fillings is here to help. Our team can guide you through
           the 80G registration process, ensuring a smooth and efficient
           experience from start to finish.
         </p>
@@ -262,10 +262,10 @@ const DetailsSection = () => {
         </ul>
 
         <h3 className="text-xl font-semibold text-gray-800 pt-4">
-          Streamline 80G Registration with CA PI!
+          Streamline 80G Registration with United Fillings!
         </h3>
         <p>
-          Simplify your 80G registration process with CA PI. Our experts guide
+          Simplify your 80G registration process with United Fillings. Our experts guide
           you through each step, from application submission to getting an 80 G
           certificate, ensuring a smooth and efficient experience. Let us handle
           the complexities while you focus on your charitable activities.

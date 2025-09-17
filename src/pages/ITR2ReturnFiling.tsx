@@ -9,7 +9,7 @@ import Sidebar from "@/components/itr1-return-filing/Sidebar";
 const ITR2ReturnFiling = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
-      <Header />
+    
       <main className="px-4 py-8 md:px-8 lg:px-16">
         <Breadcrumb />
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-8">

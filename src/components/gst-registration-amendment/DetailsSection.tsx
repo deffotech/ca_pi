@@ -17,10 +17,10 @@ const DetailsSection = () => {
         tax regulations and avoid potential penalties
       </p>
       <p>
-        CA PI experts are here to assist. With our expertise and guidance,
+        United Fillings experts are here to assist. With our expertise and guidance,
         applying for GST registration amendment becomes seamless. From ensuring
         compliance with regulatory requirements to expediting the application
-        process, CA PI experts provide comprehensive support, ensuring
+        process, United Fillings experts provide comprehensive support, ensuring
         businesses can easily adapt to evolving needs.
       </p>
 
@@ -37,7 +37,7 @@ const DetailsSection = () => {
             complying with other GST regulations.
           </p>
           <p className="mt-2">
-            Obtain your GST registration effortlessly with CA PI!
+            Obtain your GST registration effortlessly with United Fillings!
           </p>
         </div>
         <button className="ml-4 px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 flex-shrink-0">
@@ -483,16 +483,16 @@ const DetailsSection = () => {
       </p>
 
       <h3 className="text-xl font-bold text-gray-800">
-        Streamline Your GST Amendment Process with CA PI
+        Streamline Your GST Amendment Process with United Fillings
       </h3>
       <p>
-        CA PI provides comprehensive assistance with the GST amendment process,
+        United Fillings provides comprehensive assistance with the GST amendment process,
         ensuring seamless navigation through regulatory requirements. Leveraging
         our expertise, businesses can efficiently handle amendments, whether
         they involve core fields like business details or non-core fields like
         bank details. Our platform simplifies the application filing on the GST
         Common Portal, guiding users through each step, from initial filing to
-        document submission and verification. With CA PI, businesses can
+        document submission and verification. With United Fillings, businesses can
         confidently manage GST registration changes, ensuring compliance with
         regulatory standards while minimizing administrative burdens.
       </p>

@@ -10,7 +10,7 @@ import Sidebar from "@/components/llp-compliance/Sidebar";
 const LlpCompliance = () => {
   return (
     <div className="bg-white">
-      <Header />
+  
       <main className="px-4 py-8 md:px-8 lg:px-16">
         <Breadcrumb />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">

@@ -367,10 +367,10 @@ const DetailsSection = () => {
 
         <div>
           <h2 className="text-2xl font-semibold mb-3">
-            Obtain Your Trade License Easily with CA PI
+            Obtain Your Trade License Easily with United Fillings
           </h2>
           <p>
-            CA PI offers comprehensive assistance in obtaining a trading license
+            United Fillings offers comprehensive assistance in obtaining a trading license
             in India, simplifying the complex process for businesses. Our team
             of experts guides clients through every step, from application
             submission to obtaining the license. With extensive knowledge of the
@@ -379,7 +379,7 @@ const DetailsSection = () => {
             authorities.
           </p>
           <p className="mt-2">
-            By choosing CA PI, businesses can save time and effort, ensure
+            By choosing United Fillings, businesses can save time and effort, ensure
             compliance with legal requirements, and expedite the process of
             obtaining a trade license.
           </p>

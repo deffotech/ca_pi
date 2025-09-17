@@ -153,7 +153,7 @@ const DetailsSection = () => {
           </li>
         </ul>
         <p className="text-gray-600 leading-relaxed mt-4">
-          Get expert help from CA PI for streamlined copyright registration with
+          Get expert help from United Fillings for streamlined copyright registration with
           reasonable copyright fees in India - Quick & Reliable!
         </p>
       </div>
@@ -317,19 +317,19 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold text-gray-800 mb-4">
-          How CA PI Can Assist You?
+          How United Fillings Can Assist You?
         </h2>
         <p className="text-gray-600 leading-relaxed">
-          At CA PI, we're dedicated to streamlining the often complex journey of
+          At United Fillings, we're dedicated to streamlining the often complex journey of
           online copyright registration in India. Our team, comprising experts,
           provides comprehensive support, ensuring that each step, from initial
           documentation to handling potential objections and obtaining the final
           copyright certificate with affordable copyright fees in India. We
           manage to register copyright online with precision and expertise. By
-          choosing CA PI, you can take advantage of seamless registration
+          choosing United Fillings, you can take advantage of seamless registration
           process, ensuring your creative works are safeguarded at a good
           copyright registration cost. Whether you are a budding creator or an
-          established intellectual property owner, with CA PI by your side, you
+          established intellectual property owner, with United Fillings by your side, you
           can navigate the online copyright registration process with confidence
           and ease.
         </p>

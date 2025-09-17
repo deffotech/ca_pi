@@ -1,3 +1,4 @@
+
 import {
   Users,
   Building,
@@ -6,6 +7,7 @@ import {
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const EnterprisePartnership = () => {
   const benefits = [
@@ -51,7 +53,7 @@ const EnterprisePartnership = () => {
               Enterprise Partnership Program
             </h2>
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-              Partner with CA PI to provide comprehensive business services to
+              Partner with United Fillings to provide comprehensive business services to
               your clients. Our enterprise solutions are designed for accounting
               firms, consultants, and business service providers.
             </p>
@@ -72,10 +74,13 @@ const EnterprisePartnership = () => {
               ))}
             </div>
 
-            <button className="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors flex items-center space-x-2 shadow-lg">
+            <Link 
+              to="/partner"
+              className="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors flex items-center space-x-2 shadow-lg w-fit"
+            >
               <span>Become a Partner</span>
               <ArrowRight className="h-5 w-5" />
-            </button>
+            </Link>
           </div>
 
           {/* Features Card */}
@@ -98,9 +103,12 @@ const EnterprisePartnership = () => {
                 Join our network of successful partners and grow your business
                 with our proven platform.
               </p>
-              <button className="text-green-300 font-semibold hover:text-green-200 transition-colors">
+              <Link 
+                to="/partner"
+                className="text-green-300 font-semibold hover:text-green-200 transition-colors"
+              >
                 Learn More →
-              </button>
+              </Link>
             </div>
           </div>
         </div>

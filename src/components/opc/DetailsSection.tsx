@@ -16,7 +16,7 @@ const DetailsSection = () => {
           company.
         </p>
         <p>
-          At CA PI, we specialize in simplifying the OPC registration process,
+          At United Fillings, we specialize in simplifying the OPC registration process,
           ensuring that entrepreneurs can smoothly navigate the complexities of
           legal formalities with reasonable One person company registration
           fees. Our experienced team is dedicated to assisting you at every step
@@ -273,12 +273,12 @@ const DetailsSection = () => {
         </p>
 
         <h3 className="text-xl font-bold text-gray-800 mt-6">
-          Why CA PI for OPC Registration Online?
+          Why United Fillings for OPC Registration Online?
         </h3>
         <p>
-          CA PI is the ideal partner for OPC registration online for several
+          United Fillings is the ideal partner for OPC registration online for several
           compelling reasons. With years of expertise in company registration
-          and a deep understanding of the regulatory landscape, CA PI simplifies
+          and a deep understanding of the regulatory landscape, United Fillings simplifies
           the often complex OPC registration process. Our one person company
           registration fees are designed to be affordable while providing
           exceptional value, ensuring a seamless experience from start to
@@ -291,7 +291,7 @@ const DetailsSection = () => {
           registration process adheres to all legal requirements, while our
           dedicated support team is readily available to address any queries or
           concerns you may have. With our transparent one person company
-          registration fees, you can trust CA PI to deliver reliable and
+          registration fees, you can trust United Fillings to deliver reliable and
           professional service tailored to your needs.
         </p>
         <p>

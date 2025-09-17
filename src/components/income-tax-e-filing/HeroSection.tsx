@@ -39,7 +39,7 @@ const HeroSection = () => {
             <span className="text-sm text-gray-500 ml-2">(7854)</span>
           </div>
           <p className="text-sm text-gray-600 mt-2">
-            E-file your income tax return (ITR) online through CA PI quickly at
+            E-file your income tax return (ITR) online through United Fillings quickly at
             an affordable price. Get free income tax support for ITR filing.
           </p>
 

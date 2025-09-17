@@ -26,7 +26,7 @@ const Sidebar = () => {
 
       <div className="mt-6">
         <p className="text-center text-sm">
-          Existing User? <Link to="/auth" className="font-medium text-green-600 hover:text-green-500">Login</Link>
+          Existing User? <Link to="/login" className="font-medium text-green-600 hover:text-green-500">Login</Link>
         </p>
 
         <form action="#" method="POST" className="mt-4 space-y-4">

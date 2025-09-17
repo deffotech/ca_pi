@@ -15,7 +15,7 @@ const DetailsSection = () => {
           confidently.
         </p>
         <p>
-          Getting your LLP registered in India is super easy with CA PI. Many
+          Getting your LLP registered in India is super easy with United Fillings. Many
           businesses trust us to help them register their Limited Liability
           Partnerships and ensure they follow the rules. Our team of experts
           will guide you through the online registration process from beginning
